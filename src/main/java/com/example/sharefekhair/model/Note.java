@@ -1,15 +1,18 @@
 package com.example.sharefekhair.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
-@AllArgsConstructor @NoArgsConstructor @Getter @Setter
+@NoArgsConstructor @Getter @Setter
 @Entity
 public class Note {
 
@@ -17,13 +20,11 @@ public class Note {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotEmpty(message = "message is required")
     private String message;
-    @NotEmpty(message = "messageDate is required")
+    @Temporal(TemporalType.TIMESTAMP)
     private Date messageDate;
     @ManyToOne
     @JoinColumn(name = "user_id")
-    @NotEmpty(message = "user_id is required")
     private MyUser user;
 
     @ManyToOne
@@ -32,6 +33,14 @@ public class Note {
             joinColumns = { @JoinColumn(name = "session_id") },
             inverseJoinColumns = { @JoinColumn(name = "note_id"),}
     )
+    @JsonIgnore
     private MySession mySession;
 
+    public Note(Integer id, String message, Date messageDate, MyUser user, MySession mySession) {
+        this.id = id;
+        this.message = message;
+        this.messageDate = new Date();
+        this.user = user;
+        this.mySession = mySession;
+    }
 }

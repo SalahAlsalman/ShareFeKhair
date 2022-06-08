@@ -1,9 +1,7 @@
 package com.example.sharefekhair.advice;
 
 import com.example.sharefekhair.DTO.ResponseAPI;
-import com.example.sharefekhair.exceptions.MyClassNotFoundException;
-import com.example.sharefekhair.exceptions.StudentNotFoundException;
-import com.example.sharefekhair.exceptions.TeacherNotFoundException;
+import com.example.sharefekhair.exceptions.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -14,6 +12,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.Objects;
 
 @RestControllerAdvice
 public class ControllerAdviceHandler {
@@ -38,6 +37,18 @@ public class ControllerAdviceHandler {
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
+    @ExceptionHandler(value = UserIdNotFoundException.class)
+    public ResponseEntity<ResponseAPI<?>> UserIdNotFoundException(UserIdNotFoundException e) {
+        logger.warn("UserIdNotFoundException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
+    @ExceptionHandler(value = SessionIdNotFoundException.class)
+    public ResponseEntity<ResponseAPI<?>> SessionIdNotFoundException(SessionIdNotFoundException e) {
+        logger.warn("SessionIdNotFoundException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
     @ExceptionHandler(value = IllegalStateException.class)
     public ResponseEntity<ResponseAPI<?>> IllegalStateException(IllegalStateException e) {
         logger.warn("IllegalStateException => provoked!\n"+e.getMessage());
@@ -46,14 +57,14 @@ public class ControllerAdviceHandler {
 
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
     public ResponseEntity<ResponseAPI<?>> MethodArgumentNotValidException(MethodArgumentNotValidException mane){
-        logger.warn("MethodArgumentNotValidException => provoked!\n"+mane.getFieldError().getDefaultMessage());
+        logger.warn("MethodArgumentNotValidException => provoked!\n"+ Objects.requireNonNull(mane.getFieldError()).getDefaultMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(mane.getFieldError().getDefaultMessage(),400));
     }
 
     @ExceptionHandler(value = DataIntegrityViolationException.class)
     public ResponseEntity<ResponseAPI<?>> DataIntegrityViolationException(DataIntegrityViolationException dt){
         logger.warn("DataIntegrityViolationException => provoked!\n"+dt.getRootCause());
-        return ResponseEntity.status(400).body(new ResponseAPI<>(dt.getRootCause().getMessage(),400));
+        return ResponseEntity.status(400).body(new ResponseAPI<>(Objects.requireNonNull(dt.getRootCause()).getMessage(),400));
     }
 
     @ExceptionHandler(value = Exception.class)
