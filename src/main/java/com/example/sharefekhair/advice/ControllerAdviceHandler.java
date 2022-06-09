@@ -55,11 +55,18 @@ public class ControllerAdviceHandler {
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
+    @ExceptionHandler(value = UserIdDoesntHaveThisClassException.class)
+    public ResponseEntity<ResponseAPI<?>> UserIdDoesntHaveThisClassException(UserIdDoesntHaveThisClassException e) {
+        logger.warn("UserIdDoesntHaveThisClassException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
     @ExceptionHandler(value = IllegalStateException.class)
     public ResponseEntity<ResponseAPI<?>> IllegalStateException(IllegalStateException e) {
         logger.warn("IllegalStateException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
+
 
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
     public ResponseEntity<ResponseAPI<?>> MethodArgumentNotValidException(MethodArgumentNotValidException mane){
