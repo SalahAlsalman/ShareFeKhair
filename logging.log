@@ -188,3 +188,26 @@ you don't own this note
 note_id is wrong
 2022-06-09 13:45:47.876  INFO 61591 --- [http-nio-8080-exec-3] c.e.s.advice.ControllerAdviceHandler     : YoureNotOwnerOfThisNoteException => provoked!
 you don't own this note
+2022-06-09 14:02:38.949  INFO 61707 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61707 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 14:02:38.951  INFO 61707 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 14:02:43.767  INFO 61707 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 5.175 seconds (JVM running for 5.775)
+2022-06-09 14:03:59.455  INFO 61707 --- [http-nio-8080-exec-3] c.e.s.advice.ControllerAdviceHandler     : CommentIdNotFoundException => provoked!
+comment_id is wrong
+2022-06-09 14:04:06.206  INFO 61707 --- [http-nio-8080-exec-6] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 14:04:19.581  INFO 61707 --- [http-nio-8080-exec-10] c.e.s.advice.ControllerAdviceHandler     : YoureNotOwnerOfThisNoteException => provoked!
+you don't own this comment
+2022-06-09 14:04:21.571 ERROR 61707 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 14:04:21.586  WARN 61707 --- [http-nio-8080-exec-1] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 14:04:46.988  INFO 61719 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61719 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 14:04:46.990  INFO 61719 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 14:04:50.789  INFO 61719 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.154 seconds (JVM running for 4.719)
+2022-06-09 14:05:09.887 ERROR 61719 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 14:05:09.905  WARN 61719 --- [http-nio-8080-exec-1] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 14:05:42.376  INFO 61728 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61728 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 14:05:42.379  INFO 61728 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 14:05:46.322  INFO 61728 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.288 seconds (JVM running for 4.87)
+2022-06-09 14:06:19.035  INFO 61728 --- [http-nio-8080-exec-8] c.e.s.advice.ControllerAdviceHandler     : CommentIdNotFoundException => provoked!
+comment_id is wrong

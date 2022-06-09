@@ -28,4 +28,11 @@ public class CommentController {
         commentService.addComment(commentDTO);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Comment Added", 200));
     }
+
+    @DeleteMapping("/{comment_id}/{user_id}")
+    public ResponseEntity<ResponseAPI<?>> deleteComment(@PathVariable Integer comment_id,
+                                                     @PathVariable Integer user_id) {
+        commentService.deleteComment(comment_id,user_id);
+        return ResponseEntity.status(200).body(new ResponseAPI<>("Comment Deleted!",200));
+    }
 }

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor
@@ -69,5 +70,23 @@ public class CommentService {
 
 
 
+    }
+
+    public void deleteComment(Integer comment_id, Integer user_id) {
+        Comment comment = commentRepository.findById(comment_id).orElseThrow(()->{
+            throw new CommentIdNotFoundException("comment_id is wrong");
+        });
+        if (comment.getUser().getId() != user_id){
+            throw new YoureNotOwnerOfThisNoteException("you don't own this comment");
+        }
+        MyUser user = userRepository.findById(user_id).orElseThrow(()->{
+            throw new UserIdNotFoundException("user_id is wrong");
+        });
+
+        Note note = noteRepository.findById(comment.getNote().getId()).orElseThrow(()->{
+            throw new SessionIdNotFoundException("note_id is wrong");
+        });
+        note.getComments().remove(comment);
+        commentRepository.delete(comment);
     }
 }

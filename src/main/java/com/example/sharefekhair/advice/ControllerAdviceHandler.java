@@ -61,6 +61,12 @@ public class ControllerAdviceHandler {
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
+    @ExceptionHandler(value = CommentIdNotFoundException.class)
+    public ResponseEntity<ResponseAPI<?>> CommentIdNotFoundException(CommentIdNotFoundException e) {
+        logger.info("CommentIdNotFoundException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
     @ExceptionHandler(value = YoureNotOwnerOfThisNoteException.class)
     public ResponseEntity<ResponseAPI<?>> YoureNotOwnerOfThisNoteException(YoureNotOwnerOfThisNoteException e) {
         logger.info("YoureNotOwnerOfThisNoteException => provoked!\n"+e.getMessage());
