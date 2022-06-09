@@ -1012,3 +1012,6 @@ HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
 2022-06-09 11:03:09.426 ERROR 59605 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'omar' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
 2022-06-09 11:03:09.564 ERROR 59605 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'faisal' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
 2022-06-09 11:03:09.680 ERROR 59605 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'khalid' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
+2022-06-09 11:12:59.323 ERROR 59795 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Thu Jun 09 11:12:59 AST 2022}

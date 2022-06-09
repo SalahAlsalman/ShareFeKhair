@@ -25,16 +25,4 @@ public class Teacher {
     @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL)
     private Set<MyClass> classes;
 
-    @OneToMany(mappedBy = "teacher")
-    @JsonIgnore
-    private Set<MySession> sessions;
-
-
-    @Override
-    public String toString() {
-        return "Teacher{" +
-                "id=" + id +
-                ", user=" + user +
-                '}';
-    }
 }

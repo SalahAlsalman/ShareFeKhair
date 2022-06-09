@@ -39,18 +39,8 @@ public class SessionService {
         MyClass myClass2 = classRepository.findById(mySessionDTO.getClass_id()).orElseThrow(()->{
             throw new MyClassNotFoundException("class_id is wrong");
         });
-        MySession mySession = new MySession(null,teacher,myClass2,new HashSet<>(),new HashSet<>());
+        MySession mySession = new MySession(null,myClass2,new HashSet<>());
 
-        List<Student> students= studentRepository.findAll();
-        for (int i = 0; i <students.size(); i++) {
-            Student student = students.get(i);
-            for(MyClass myClass: student.getClasses()){
-                if(myClass.getId().equals(mySessionDTO.getClass_id())){
-                    mySession.getStudentSet().add(student);
-                    studentRepository.save(student);
-                }
-            }
-        }
         sessionRepository.save(mySession);
     }
 }

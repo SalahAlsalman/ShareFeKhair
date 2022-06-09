@@ -28,9 +28,9 @@ public class UserService {
         user.setPassword(hashedPassword);
         userRepository.save(user);
         if (user.getRole().equals("student"))
-            studentService.addStudent(new Student(null, user, new HashSet<>(), new HashSet<>()));
+            studentService.addStudent(new Student(null, user, new HashSet<>()));
         if (user.getRole().equals("teacher"))
-            teacherService.addTeacher(new Teacher(null, user, new HashSet<>(), new HashSet<>()));
+            teacherService.addTeacher(new Teacher(null, user, new HashSet<>()));
     }
 }
 

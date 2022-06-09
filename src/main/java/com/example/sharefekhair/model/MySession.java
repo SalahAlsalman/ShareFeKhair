@@ -21,29 +21,12 @@ public class MySession {
 
     @ManyToOne
     @JoinTable(
-            name = "teacher_sessions",
-            joinColumns = { @JoinColumn(name = "teacher_id") },
-            inverseJoinColumns = { @JoinColumn(name = "session_id"),}
-    )
-    @NotNull(message = "teacher_id is required")
-    private Teacher teacher;
-
-    @ManyToOne
-    @JoinTable(
             name = "class_sessions",
             joinColumns = { @JoinColumn(name = "class_id") },
             inverseJoinColumns = { @JoinColumn(name = "session_id"),}
     )
     @NotNull(message = "class_id is required")
     private MyClass myClass;
-
-    @ManyToMany(cascade = { CascadeType.ALL })
-    @JoinTable(
-            name = "student_sessions",
-            joinColumns = { @JoinColumn(name = "student_id") },
-            inverseJoinColumns = { @JoinColumn(name = "session_id") }
-    )
-    private Set<Student> studentSet;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(

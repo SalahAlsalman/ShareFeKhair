@@ -26,7 +26,4 @@ public class Student {
     @ManyToMany(mappedBy = "studentSet", cascade = CascadeType.ALL)
     private Set<MyClass> classes;
 
-    @ManyToMany(mappedBy = "studentSet")
-    @JsonIgnore
-    private Set<MySession> sessions;
 }
