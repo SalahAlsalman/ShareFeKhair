@@ -34,10 +34,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .csrf().disable().authorizeRequests()
+        http.csrf().disable()
+
+                .authorizeRequests()
                 .antMatchers("/api/v1/auth/register").permitAll()
                 .anyRequest().authenticated()
+                .and()
+                .logout()
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESSIONID")
+                .logoutUrl("/api/v1/auth/logout")
                 .and()
                 .exceptionHandling().authenticationEntryPoint(new MyAuthenticationEntryPoint())
                 .and().httpBasic();

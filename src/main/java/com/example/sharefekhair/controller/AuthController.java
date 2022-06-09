@@ -23,8 +23,11 @@ public class AuthController {
     }
 
     //login
+    @PostMapping("/login")
+    public ResponseEntity<ResponseAPI<?>> login(){
+        return ResponseEntity.status(200).body(new ResponseAPI<>("Logged",200));
+    }
 
-    //logout
 
     //TODO: not working
     @DeleteMapping("/{user_id}")
