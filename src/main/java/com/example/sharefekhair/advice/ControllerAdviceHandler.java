@@ -67,6 +67,12 @@ public class ControllerAdviceHandler {
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
+    @ExceptionHandler(value = ClassIdIsNotFoundException.class)
+    public ResponseEntity<ResponseAPI<?>> ClassIdIsNotFoundException(ClassIdIsNotFoundException e) {
+        logger.info("ClassIdIsNotFoundException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
     @ExceptionHandler(value = YoureNotOwnerOfThisNoteException.class)
     public ResponseEntity<ResponseAPI<?>> YoureNotOwnerOfThisNoteException(YoureNotOwnerOfThisNoteException e) {
         logger.info("YoureNotOwnerOfThisNoteException => provoked!\n"+e.getMessage());

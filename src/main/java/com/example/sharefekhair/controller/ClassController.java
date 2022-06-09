@@ -25,4 +25,10 @@ public class ClassController {
         classService.addClass(myClass);
         return ResponseEntity.status(201).body(new ResponseAPI<>("Class added",201));
     }
+
+    @DeleteMapping("/{class_id}")
+    public ResponseEntity<ResponseAPI<?>> deleteClass(@PathVariable Integer class_id){
+        classService.deleteClass(class_id);
+        return ResponseEntity.status(201).body(new ResponseAPI<>("Class removed",201));
+    }
 }

@@ -18,9 +18,8 @@ public class TeacherController {
     }
 
     @PostMapping
-    public ResponseEntity<ResponseAPI<?>> addTeacherToClass(
-            @RequestParam Integer teacher_id, @RequestParam Integer class_id){
-        teacherService.addTeacherToClass(teacher_id,class_id);
+    public ResponseEntity<ResponseAPI<?>> addTeacherToClass(@RequestParam Integer class_id){
+        teacherService.addTeacherToClass(class_id);
         return ResponseEntity.status(201).body(new ResponseAPI<>("Class Added", 201));
     }
 }
