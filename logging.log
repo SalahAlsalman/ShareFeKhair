@@ -97,3 +97,12 @@ this user is not in this class
 this user is not in this class
 2022-06-09 12:50:33.684  WARN 60949 --- [http-nio-8080-exec-4] c.e.s.advice.ControllerAdviceHandler     : SessionIdNotFoundException => provoked!
 session_id is wrong
+2022-06-09 13:02:23.883  INFO 61075 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61075 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:02:23.886  INFO 61075 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:02:27.854  INFO 61075 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.352 seconds (JVM running for 4.931)
+2022-06-09 13:04:08.771  WARN 61075 --- [http-nio-8080-exec-1] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:05:09.878  WARN 61075 --- [http-nio-8080-exec-10] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:05:21.992  WARN 61075 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : UserIdDoesntHaveThisClassException => provoked!
+this user is not in this class

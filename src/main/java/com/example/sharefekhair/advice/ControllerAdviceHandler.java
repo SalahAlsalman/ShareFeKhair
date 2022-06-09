@@ -21,43 +21,43 @@ public class ControllerAdviceHandler {
 
     @ExceptionHandler(value = StudentNotFoundException.class)
     public ResponseEntity<ResponseAPI<?>> StudentNotFoundException(StudentNotFoundException e) {
-        logger.warn("StudentNotFoundException => provoked!\n"+e.getMessage());
+        logger.info("StudentNotFoundException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
     @ExceptionHandler(value = MyClassNotFoundException.class)
     public ResponseEntity<ResponseAPI<?>> MyClassNotFoundException(MyClassNotFoundException e) {
-        logger.warn("MyClassNotFoundException => provoked!\n"+e.getMessage());
+        logger.info("MyClassNotFoundException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
     @ExceptionHandler(value = TeacherNotFoundException.class)
     public ResponseEntity<ResponseAPI<?>> TeacherNotFoundException(TeacherNotFoundException e) {
-        logger.warn("TeacherNotFoundException => provoked!\n"+e.getMessage());
+        logger.info("TeacherNotFoundException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
     @ExceptionHandler(value = UserIdNotFoundException.class)
     public ResponseEntity<ResponseAPI<?>> UserIdNotFoundException(UserIdNotFoundException e) {
-        logger.warn("UserIdNotFoundException => provoked!\n"+e.getMessage());
+        logger.info("UserIdNotFoundException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
     @ExceptionHandler(value = SessionIdNotFoundException.class)
     public ResponseEntity<ResponseAPI<?>> SessionIdNotFoundException(SessionIdNotFoundException e) {
-        logger.warn("SessionIdNotFoundException => provoked!\n"+e.getMessage());
+        logger.info("SessionIdNotFoundException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
     @ExceptionHandler(value = NoteIdNotFoundException.class)
     public ResponseEntity<ResponseAPI<?>> NoteIdNotFoundException(NoteIdNotFoundException e) {
-        logger.warn("NoteIdNotFoundException => provoked!\n"+e.getMessage());
+        logger.info("NoteIdNotFoundException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
     @ExceptionHandler(value = UserIdDoesntHaveThisClassException.class)
     public ResponseEntity<ResponseAPI<?>> UserIdDoesntHaveThisClassException(UserIdDoesntHaveThisClassException e) {
-        logger.warn("UserIdDoesntHaveThisClassException => provoked!\n"+e.getMessage());
+        logger.info("UserIdDoesntHaveThisClassException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
