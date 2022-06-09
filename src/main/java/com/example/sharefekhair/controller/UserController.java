@@ -20,9 +20,7 @@ public class UserController {
         return ResponseEntity.status(200).body(new ResponseAPI<>(userService.getUsers(),200));
     }
 
-    @PostMapping
-    public ResponseEntity<ResponseAPI<?>> addUser(@RequestBody @Valid MyUser user) {
-        userService.addUser(user);
-        return ResponseEntity.status(201).body(new ResponseAPI<>("User added", 201));
-    }
+
+
+
 }

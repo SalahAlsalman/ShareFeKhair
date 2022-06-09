@@ -1,5 +1,6 @@
 package com.example.sharefekhair.config;
 
+import com.example.sharefekhair.advice.MyAuthenticationEntryPoint;
 import com.example.sharefekhair.service.MyUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,8 +34,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().authorizeRequests()
-                .anyRequest().permitAll()
+        http
+                .csrf().disable().authorizeRequests()
+                .antMatchers("/api/v1/auth/register").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .exceptionHandling().authenticationEntryPoint(new MyAuthenticationEntryPoint())
                 .and().httpBasic();
     }
 }
