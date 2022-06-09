@@ -1,19 +1,19 @@
 package com.example.sharefekhair.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.Set;
 
 @NoArgsConstructor
 @Getter
 @Setter
 @Entity
-public class Note {
+public class Comment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,21 +28,18 @@ public class Note {
 
     @ManyToOne
     @JoinTable(
-            name = "notes_sessions",
-            joinColumns = {@JoinColumn(name = "session_id")},
-            inverseJoinColumns = {@JoinColumn(name = "note_id"),}
+            name = "comments_note",
+            joinColumns = {@JoinColumn(name = "note_id")},
+            inverseJoinColumns = {@JoinColumn(name = "comment_id"),}
     )
     @JsonIgnore
-    private MySession mySession;
+    private Note note;
 
-    @OneToMany(mappedBy = "note")
-    private Set<Comment> comments;
-
-    public Note(Integer id, String message, Date messageDate, MyUser user, MySession mySession) {
+    public Comment(Integer id, String message, Date messageDate, MyUser user, Note note) {
         this.id = id;
         this.message = message;
         this.messageDate = new Date();
         this.user = user;
-        this.mySession = mySession;
+        this.note = note;
     }
 }

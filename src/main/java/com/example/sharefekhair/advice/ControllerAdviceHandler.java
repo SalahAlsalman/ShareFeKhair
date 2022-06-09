@@ -49,6 +49,12 @@ public class ControllerAdviceHandler {
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
+    @ExceptionHandler(value = NoteIdNotFoundException.class)
+    public ResponseEntity<ResponseAPI<?>> NoteIdNotFoundException(NoteIdNotFoundException e) {
+        logger.warn("NoteIdNotFoundException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
     @ExceptionHandler(value = IllegalStateException.class)
     public ResponseEntity<ResponseAPI<?>> IllegalStateException(IllegalStateException e) {
         logger.warn("IllegalStateException => provoked!\n"+e.getMessage());
