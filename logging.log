@@ -106,3 +106,85 @@ note_id is wrong
 note_id is wrong
 2022-06-09 13:05:21.992  WARN 61075 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : UserIdDoesntHaveThisClassException => provoked!
 this user is not in this class
+2022-06-09 13:06:24.785  INFO 61118 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61118 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:06:24.787  INFO 61118 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:06:28.736  INFO 61118 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.329 seconds (JVM running for 4.931)
+2022-06-09 13:06:54.258 ERROR 61118 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Thu Jun 09 13:06:54 AST 2022}
+2022-06-09 13:15:09.563  INFO 61276 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61276 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:15:09.566  INFO 61276 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:15:13.562  INFO 61276 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.422 seconds (JVM running for 5.115)
+2022-06-09 13:16:16.377 ERROR 61276 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:16:16.397  WARN 61276 --- [http-nio-8080-exec-5] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:17:00.233  INFO 61315 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61315 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:17:00.235  INFO 61315 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:17:04.001  INFO 61315 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.123 seconds (JVM running for 4.911)
+2022-06-09 13:17:17.263 ERROR 61315 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:17:17.276  WARN 61315 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:17:40.161  INFO 61322 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61322 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:17:40.163  INFO 61322 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:17:43.898  INFO 61322 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.077 seconds (JVM running for 4.68)
+2022-06-09 13:17:55.428 ERROR 61322 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:17:55.446  WARN 61322 --- [http-nio-8080-exec-1] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:19:28.568  INFO 61344 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61344 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:19:28.569  INFO 61344 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:19:32.510  INFO 61344 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.284 seconds (JVM running for 4.973)
+2022-06-09 13:19:40.755 ERROR 61344 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:19:40.771  WARN 61344 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:30:57.206  INFO 61413 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61413 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:30:57.208  INFO 61413 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:31:01.256  INFO 61413 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.412 seconds (JVM running for 5.038)
+2022-06-09 13:31:10.969 ERROR 61413 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:31:10.984  WARN 61413 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:31:36.362  INFO 61421 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61421 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:31:36.363  INFO 61421 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:31:40.300  INFO 61421 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.292 seconds (JVM running for 4.91)
+2022-06-09 13:31:48.033 ERROR 61421 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:31:48.051  WARN 61421 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:32:08.423  INFO 61427 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61427 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:32:08.424  INFO 61427 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:32:12.972  INFO 61427 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.893 seconds (JVM running for 5.483)
+2022-06-09 13:32:40.737  INFO 61427 --- [http-nio-8080-exec-5] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:33:47.255  INFO 61436 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61436 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:33:47.256  INFO 61436 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:33:51.207  INFO 61436 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.286 seconds (JVM running for 4.886)
+2022-06-09 13:33:57.753 ERROR 61436 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:33:57.776  WARN 61436 --- [http-nio-8080-exec-1] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`sharefekhair`.`comments_note`, CONSTRAINT `FKkwimndr7q1w8pi1vjgxjq60qp` FOREIGN KEY (`comment_id`) REFERENCES `note` (`id`))
+2022-06-09 13:35:42.082  INFO 61448 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61448 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:35:42.083  INFO 61448 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:35:46.063  INFO 61448 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.431 seconds (JVM running for 5.374)
+2022-06-09 13:36:22.881  INFO 61448 --- [http-nio-8080-exec-7] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:36:35.071  INFO 61448 --- [http-nio-8080-exec-10] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:36:48.795  INFO 61448 --- [http-nio-8080-exec-4] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:37:14.298  INFO 61448 --- [http-nio-8080-exec-8] c.e.s.advice.ControllerAdviceHandler     : UserIdDoesntHaveThisClassException => provoked!
+this user is not in this class
+2022-06-09 13:38:17.158  INFO 61448 --- [http-nio-8080-exec-1] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:38:40.378  INFO 61448 --- [http-nio-8080-exec-9] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:43:28.063  INFO 61575 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61575 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:43:28.065  INFO 61575 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:43:32.382  INFO 61575 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.687 seconds (JVM running for 5.523)
+2022-06-09 13:43:55.950  INFO 61575 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:44:06.274  INFO 61575 --- [http-nio-8080-exec-3] c.e.s.advice.ControllerAdviceHandler     : YoureNotOwnerOfThisNoteException => provoked!
+you don't own this note
+2022-06-09 13:45:33.419  INFO 61591 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 61591 (/Users/salahalsalman/IdeaProjects/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/IdeaProjects/ShareFeKhair)
+2022-06-09 13:45:33.420  INFO 61591 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-09 13:45:37.338  INFO 61591 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.291 seconds (JVM running for 5.032)
+2022-06-09 13:45:44.376  INFO 61591 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-09 13:45:47.876  INFO 61591 --- [http-nio-8080-exec-3] c.e.s.advice.ControllerAdviceHandler     : YoureNotOwnerOfThisNoteException => provoked!
+you don't own this note

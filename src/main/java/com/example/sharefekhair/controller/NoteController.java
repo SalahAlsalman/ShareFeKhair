@@ -26,4 +26,11 @@ public class NoteController {
         noteService.addNote(noteDTO);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Note Added", 200));
     }
+
+    @DeleteMapping("/{note_id}/{user_id}")
+    public ResponseEntity<ResponseAPI<?>> deleteNote(@PathVariable Integer note_id,
+                                                     @PathVariable Integer user_id) {
+        noteService.deleteNote(note_id,user_id);
+        return ResponseEntity.status(200).body(new ResponseAPI<>("Note Deleted!",200));
+    }
 }

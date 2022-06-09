@@ -9,12 +9,14 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class NoteService {
     private final NoteRepository noteRepository;
+    private final CommentRepository commentRepository;
     private final UserRepository userRepository;
     private final StudentRepository studentRepository;
     private final TeacherRepository teacherRepository;
@@ -69,5 +71,26 @@ public class NoteService {
             }
             throw new UserIdDoesntHaveThisClassException("this user is not in this class");
         }
+    }
+
+    public void deleteNote(Integer note_id, Integer user_id) {
+        Note note = noteRepository.findById(note_id).orElseThrow(()->{
+            throw new NoteIdNotFoundException("note_id is wrong");
+        });
+        if (note.getUser().getId() != user_id){
+            throw new YoureNotOwnerOfThisNoteException("you don't own this note");
+        }
+        MyUser user = userRepository.findById(user_id).orElseThrow(()->{
+            throw new UserIdNotFoundException("user_id is wrong");
+        });
+        MySession session = sessionRepository.findById(note.getMySession().getId()).orElseThrow(()->{
+            throw new SessionIdNotFoundException("session_id is wrong");
+        });
+        if (note.getComments().size()>0){
+            commentRepository.deleteAll(note.getComments());
+        }
+        noteRepository.delete(note);
+        user.getNotes().remove(note);
+        session.getNotes().remove(note);
     }
 }
