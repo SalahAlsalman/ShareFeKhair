@@ -57,6 +57,5 @@ public class StudentService {
         student.getClasses().add(myClass);
         myClass.getStudentSet().add(student);
         studentRepository.save(student);
-        classRepository.save(myClass);
     }
 }

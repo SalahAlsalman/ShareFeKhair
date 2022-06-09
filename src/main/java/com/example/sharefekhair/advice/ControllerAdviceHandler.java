@@ -2,6 +2,7 @@ package com.example.sharefekhair.advice;
 
 import com.example.sharefekhair.DTO.ResponseAPI;
 import com.example.sharefekhair.exceptions.*;
+import org.hibernate.TransientPropertyValueException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -79,10 +80,22 @@ public class ControllerAdviceHandler {
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
+    @ExceptionHandler(value = YoureNotOwnerOfThisUserException.class)
+    public ResponseEntity<ResponseAPI<?>> YoureNotOwnerOfThisUserException(YoureNotOwnerOfThisUserException e) {
+        logger.info("YoureNotOwnerOfThisUserException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
     @ExceptionHandler(value = IllegalStateException.class)
     public ResponseEntity<ResponseAPI<?>> IllegalStateException(IllegalStateException e) {
         logger.warn("IllegalStateException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
+    @ExceptionHandler(value = TransientPropertyValueException.class)
+    public ResponseEntity<ResponseAPI<?>> TransientPropertyValueException(TransientPropertyValueException e) {
+        logger.warn("TransientPropertyValueException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getPropertyName(),400));
     }
 
 

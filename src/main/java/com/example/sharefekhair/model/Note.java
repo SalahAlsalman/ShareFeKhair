@@ -36,6 +36,7 @@ public class Note {
     private MySession mySession;
 
     @OneToMany(mappedBy = "note")
+//    @OneToMany(mappedBy = "note",cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE })
     private Set<Comment> comments;
 
     public Note(Integer id, String message, Date messageDate, MyUser user, MySession mySession) {

@@ -43,7 +43,11 @@ public class MyUser implements UserDetails {
     @Pattern(regexp = "(student|teacher)",message = "role must be (student|teacher)")
     private String role;
 
-    @OneToOne
+    @OneToOne(
+            mappedBy = "user",
+            orphanRemoval = true,
+            cascade = CascadeType.ALL
+    )
     @JsonIgnore
     @PrimaryKeyJoinColumn
     private Teacher teacher;

@@ -2,6 +2,8 @@ package com.example.sharefekhair.service;
 
 import com.example.sharefekhair.exceptions.MyClassNotFoundException;
 import com.example.sharefekhair.exceptions.TeacherNotFoundException;
+import com.example.sharefekhair.exceptions.YoureNotOwnerOfThisNoteException;
+import com.example.sharefekhair.exceptions.YoureNotOwnerOfThisUserException;
 import com.example.sharefekhair.model.MyClass;
 import com.example.sharefekhair.model.MyUser;
 import com.example.sharefekhair.model.Teacher;
@@ -14,6 +16,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 @Service

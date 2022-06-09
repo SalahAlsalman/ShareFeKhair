@@ -5,10 +5,7 @@ import com.example.sharefekhair.model.MyUser;
 import com.example.sharefekhair.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -23,6 +20,17 @@ public class AuthController {
     public ResponseEntity<ResponseAPI<?>> register(@RequestBody @Valid MyUser user) {
         userService.addUser(user);
         return ResponseEntity.status(201).body(new ResponseAPI<>("User added", 201));
+    }
+
+    //login
+
+    //logout
+
+    //TODO: not working
+    @DeleteMapping("/{user_id}")
+    public ResponseEntity<ResponseAPI<?>> deleteUser(@PathVariable Integer user_id){
+        userService.deleteUser(user_id);
+        return ResponseEntity.status(200).body(new ResponseAPI<>("user deleted", 200));
     }
 
 

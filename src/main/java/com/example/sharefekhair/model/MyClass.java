@@ -37,6 +37,7 @@ public class MyClass {
     private Set<Student> studentSet;
 
     @OneToMany(mappedBy = "myClass")
+//    @OneToMany(mappedBy = "myClass",cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE })
     @JsonIgnore
     private Set<MySession> sessions;
 
