@@ -4,9 +4,6 @@
 
 
 
-
-
-
 ##Endpoints
 
 - register user with roles (student - teacher).
@@ -17,5 +14,3 @@
 - add note to any session of class.
 - add comments to any notes.
 - delete comment or notes.
-
-
