@@ -14,7 +14,7 @@
     <name>EntertainmentReservations</name>
     <description>EntertainmentReservations</description>
     <properties>
-        <java.version>18</java.version>
+        <java.version>15</java.version>
     </properties>
     <dependencies>
         <dependency>
