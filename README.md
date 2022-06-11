@@ -129,8 +129,8 @@
 ### **User Controller**:
 
 >- Get All users.
-- Update user with user_id.
-- Delete user with user_id.
+>- Update user with user_id.
+>- Delete user with user_id.
 
 ## Dependancies:
 >1. Spring web
