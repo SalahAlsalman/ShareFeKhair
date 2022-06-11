@@ -10,8 +10,6 @@ import javax.validation.constraints.NotNull;
 public class CommentDTO {
     @NotEmpty(message = "message is required")
     private String message;
-    @NotNull(message = "user_id is required")
-    private Integer user_id;
     @NotNull(message = "note_id is required")
     private Integer note_id;
 }

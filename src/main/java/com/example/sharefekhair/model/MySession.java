@@ -19,7 +19,7 @@ public class MySession {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinTable(
             name = "class_sessions",
             joinColumns = { @JoinColumn(name = "class_id") },

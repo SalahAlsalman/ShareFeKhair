@@ -27,7 +27,7 @@ public class MyClass {
     @JsonIgnore
     private Teacher teacher;
 
-    @ManyToMany(cascade = { CascadeType.ALL })
+    @ManyToMany
     @JoinTable(
             name = "Student_Class",
             joinColumns = { @JoinColumn(name = "student_id") },

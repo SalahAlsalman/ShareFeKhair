@@ -5,6 +5,8 @@ import com.example.sharefekhair.exceptions.*;
 import com.example.sharefekhair.model.*;
 import com.example.sharefekhair.repository.*;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
@@ -27,8 +29,9 @@ public class NoteService {
     }
 
     public void addNote(NoteDTO noteDTO) {
-        MyUser user= userRepository.findById(noteDTO.getUser_id()).orElseThrow(()->{
-            throw new UserIdNotFoundException("user_id is wrong");
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
+            throw new UsernameNotFoundException("username is wrong");
         });
 
         MySession session = sessionRepository.findById(noteDTO.getSession_id()).orElseThrow(()->{
@@ -73,16 +76,17 @@ public class NoteService {
         }
     }
 
-    public void deleteNote(Integer note_id, Integer user_id) {
+    public void deleteNote(Integer note_id) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
+            throw new UsernameNotFoundException("username is wrong");
+        });
         Note note = noteRepository.findById(note_id).orElseThrow(()->{
             throw new NoteIdNotFoundException("note_id is wrong");
         });
-        if (note.getUser().getId() != user_id){
+        if (note.getUser().getId() != user.getId()){
             throw new YoureNotOwnerOfThisNoteException("you don't own this note");
         }
-        MyUser user = userRepository.findById(user_id).orElseThrow(()->{
-            throw new UserIdNotFoundException("user_id is wrong");
-        });
         MySession session = sessionRepository.findById(note.getMySession().getId()).orElseThrow(()->{
             throw new SessionIdNotFoundException("session_id is wrong");
         });

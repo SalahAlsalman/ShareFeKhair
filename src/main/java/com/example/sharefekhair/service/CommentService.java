@@ -6,6 +6,9 @@ import com.example.sharefekhair.exceptions.*;
 import com.example.sharefekhair.model.*;
 import com.example.sharefekhair.repository.*;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -26,8 +29,9 @@ public class CommentService {
     }
 
     public void addComment(CommentDTO commentDTO) {
-        MyUser user= userRepository.findById(commentDTO.getUser_id()).orElseThrow(()->{
-            throw new UserIdNotFoundException("user_id is wrong");
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
+            throw new UsernameNotFoundException("username is wrong");
         });
 
         Note note = noteRepository.findById(commentDTO.getNote_id()).orElseThrow(()->{

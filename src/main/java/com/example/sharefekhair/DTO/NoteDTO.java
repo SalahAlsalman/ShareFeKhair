@@ -11,8 +11,6 @@ import java.sql.Date;
 public class NoteDTO {
     @NotEmpty(message = "message is required")
     private String message;
-    @NotNull(message = "user_id is required")
-    private Integer user_id;
     @NotNull(message = "session_id is required")
     private Integer session_id;
 }

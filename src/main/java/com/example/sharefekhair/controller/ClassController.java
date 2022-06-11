@@ -26,9 +26,15 @@ public class ClassController {
         return ResponseEntity.status(201).body(new ResponseAPI<>("Class added",201));
     }
 
+    @PutMapping
+    public ResponseEntity<ResponseAPI<?>> updateClass(@RequestParam Integer class_id, @RequestParam String name) {
+        classService.updateClass(class_id, name);
+        return ResponseEntity.status(200).body(new ResponseAPI<>("Class updated", 200));
+    }
+
     @DeleteMapping("/{class_id}")
     public ResponseEntity<ResponseAPI<?>> deleteClass(@PathVariable Integer class_id){
         classService.deleteClass(class_id);
-        return ResponseEntity.status(201).body(new ResponseAPI<>("Class removed",201));
+        return ResponseEntity.status(200).body(new ResponseAPI<>("Class removed",200));
     }
 }
