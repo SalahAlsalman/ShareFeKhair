@@ -44,7 +44,24 @@ public class UserService {
             teacherService.addTeacher(new Teacher(null, user, new ArrayList<>()));
     }
 
-    //TODO: notWorking
+    public void updateUser(Integer user_id,UpdateUserDTO newUser) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(() -> {
+            throw new UsernameNotFoundException("username is wrong");
+        });
+        //check if user owns this account
+        if (user.getId() != user_id) {
+            throw new NoRightsException("you don't own this account");
+        }
+
+        user.setUsername(newUser.getUsername());
+        String hashPassword = new BCryptPasswordEncoder().encode(newUser.getPassword());
+        user.setPassword(hashPassword);
+        user.setEmail(newUser.getEmail());
+        user.setRole(newUser.getRole());
+        userRepository.save(user);
+    }
+
     public void deleteUser(Integer user_id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(() -> {
@@ -84,23 +101,7 @@ public class UserService {
         throw new UserIdNotFoundException("you're not student or teacher !");
     }
 
-    public void updateUser(Integer user_id,UpdateUserDTO newUser) {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(() -> {
-            throw new UsernameNotFoundException("username is wrong");
-        });
-        //check if user owns this account
-        if (user.getId() != user_id) {
-            throw new NoRightsException("you don't own this account");
-        }
 
-        user.setUsername(newUser.getUsername());
-        String hashPassword = new BCryptPasswordEncoder().encode(newUser.getPassword());
-        user.setPassword(hashPassword);
-        user.setEmail(newUser.getEmail());
-        user.setRole(newUser.getRole());
-        userRepository.save(user);
-    }
 }
 
 
