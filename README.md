@@ -73,6 +73,10 @@
 | ------------- | ------------- |------------- |------------- |------------- |
 | null  | null | null|null|null|
 
+## Table Relationships:
+
+![alt text](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/Table%20relationship.png?raw=true)
+
 
 ## Endpoints
 ### Auth Controller:
