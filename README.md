@@ -86,45 +86,45 @@
 ### Auth Controller:
 
 > - Register user with roles (student - teacher).
-- Login endpoint that will return a cookie.
+>- Login endpoint that will return a cookie.
 
 ### **Class Controller**:
 
 >- Get All Classes.
-- Add new class.
-- Update class with class_id.
-- Delete class.
+>- Add new class.
+>- Update class with class_id.
+>- Delete class.
 
 ### **Comment Controller**:
 
 >- Get All comments.
-- Add new comment.
-- Update comment with comment_id.
-- Delete comment with comment_id.
+>- Add new comment.
+>- Update comment with comment_id.
+>- Delete comment with comment_id.
 
 ### **Note Controller**:
 
 >- Get All notes.
-- Add new notes.
-- Update notes with notes_id.
-- Delete notes with notes_id.
+>- Add new notes.
+>- Update notes with notes_id.
+>- Delete notes with notes_id.
 
 ### **Session Controller**:
 
 >- Get All sessions.
-- Add new session.
-- Didnt add ( update ) because it wasn't useful.
-- Delete session with session_id.
+>- Add new session.
+>- Didnt add ( update ) because it wasn't useful.
+>- Delete session with session_id.
 
 ### **Student Controller**:
 
 >- Get All students.
-- Add student to class.
+>- Add student to class.
 
 ### **Teacher Controller**:
 
 >- Get All teachers.
-- Add teacher to class.
+>- Add teacher to class.
 
 ### **User Controller**:
 
@@ -134,11 +134,11 @@
 
 ## Dependancies:
 >1. Spring web
-2. Project lombock
-3. Validation
-4. JPA
-5. Spring security 
-6. MySQL
+>2. Project lombock
+>3. Validation
+>4. JPA
+>5. Spring security 
+>6. MySQL
 
 
 
