@@ -86,6 +86,12 @@ public class ControllerAdviceHandler {
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
+    @ExceptionHandler(value = NoRightsException.class)
+    public ResponseEntity<ResponseAPI<?>> NoRightsException(NoRightsException e) {
+        logger.info("NoRightsException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
     @ExceptionHandler(value = YoureNotOwnerOfThisUserException.class)
     public ResponseEntity<ResponseAPI<?>> YoureNotOwnerOfThisUserException(YoureNotOwnerOfThisUserException e) {
         logger.info("YoureNotOwnerOfThisUserException => provoked!\n"+e.getMessage());

@@ -25,7 +25,13 @@ public class SessionController {
     @PostMapping
     public ResponseEntity<ResponseAPI<?>> addSession(@RequestBody @Valid MySessionDTO MySessionDTO){
         sessionService.addSession(MySessionDTO);
-        return ResponseEntity.status(201).body(new ResponseAPI<>("Session created",200));
+        return ResponseEntity.status(201).body(new ResponseAPI<>("Session created",201));
+    }
+
+    @DeleteMapping("/{session_id}")
+    public ResponseEntity<ResponseAPI<?>> deleteSession(@PathVariable Integer session_id){
+        sessionService.deleteSession(session_id);
+        return ResponseEntity.status(200).body(new ResponseAPI<>("Session Deleted",200));
     }
 
 
