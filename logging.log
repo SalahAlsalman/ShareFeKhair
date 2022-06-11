@@ -15016,3 +15016,132 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a par
 2022-06-11 18:57:53.047  INFO 15216 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.641 seconds (JVM running for 2.931)
 2022-06-11 18:58:51.496  INFO 15216 --- [http-nio-8080-exec-5] c.e.s.advice.ControllerAdviceHandler     : MyClassNotFoundException => provoked!
 class_id is wrong
+2022-06-11 19:12:32.402  INFO 26024 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 26024 (C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair)
+2022-06-11 19:12:32.404  INFO 26024 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-11 19:12:35.050  INFO 26024 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.844 seconds (JVM running for 3.15)
+2022-06-11 19:14:21.518  INFO 26024 --- [http-nio-8080-exec-4] c.e.s.advice.ControllerAdviceHandler     : NoRightsException => provoked!
+you don't own this account
+2022-06-11 19:14:32.355  INFO 26024 --- [http-nio-8080-exec-7] c.e.s.advice.ControllerAdviceHandler     : NoRightsException => provoked!
+you don't own this account
+2022-06-11 19:14:44.820  INFO 26024 --- [http-nio-8080-exec-8] c.e.s.advice.ControllerAdviceHandler     : NoRightsException => provoked!
+you don't own this account
+2022-06-11 19:14:48.137  INFO 26024 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : NoRightsException => provoked!
+you don't own this account
+2022-06-11 19:15:48.915  INFO 26024 --- [http-nio-8080-exec-4] c.e.s.advice.ControllerAdviceHandler     : NoRightsException => provoked!
+you don't own this account
+2022-06-11 19:16:09.468  INFO 11344 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 11344 (C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair)
+2022-06-11 19:16:09.470  INFO 11344 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-11 19:16:12.147  INFO 11344 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.877 seconds (JVM running for 3.188)
+2022-06-11 19:16:26.794  INFO 11344 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : NoRightsException => provoked!
+you don't own this account
+2022-06-11 19:16:34.760  INFO 11344 --- [http-nio-8080-exec-8] c.e.s.advice.ControllerAdviceHandler     : NoRightsException => provoked!
+you don't own this account
+2022-06-11 19:17:43.504  INFO 6812 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 6812 (C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair)
+2022-06-11 19:17:43.506  INFO 6812 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-11 19:17:46.111  INFO 6812 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.844 seconds (JVM running for 3.156)
+2022-06-11 19:17:54.868  INFO 6812 --- [http-nio-8080-exec-3] c.e.s.advice.ControllerAdviceHandler     : NoRightsException => provoked!
+you don't own this account
+2022-06-11 19:18:14.584 ERROR 6812 --- [http-nio-8080-exec-8] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.security.core.userdetails.UsernameNotFoundException: username is wrong
+	at com.example.sharefekhair.service.UserService.lambda$updateUser$3(UserService.java:90)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.sharefekhair.service.UserService.updateUser(UserService.java:89)
+	at com.example.sharefekhair.controller.UserController.updateUser(UserController.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:684)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-06-11 19:19:22.817  INFO 25164 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 25164 (C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair)
+2022-06-11 19:19:22.818  INFO 25164 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-11 19:19:25.427  INFO 25164 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.872 seconds (JVM running for 3.178)
+2022-06-11 19:19:35.105  INFO 25164 --- [http-nio-8080-exec-3] c.e.s.advice.ControllerAdviceHandler     : UsernameNotFoundException => provoked!
+username is wrong
+2022-06-11 19:20:26.619  INFO 29508 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 29508 (C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair)
+2022-06-11 19:20:26.622  INFO 29508 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-11 19:20:29.220  INFO 29508 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.808 seconds (JVM running for 3.141)

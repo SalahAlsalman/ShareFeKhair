@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -95,6 +96,12 @@ public class ControllerAdviceHandler {
     @ExceptionHandler(value = YoureNotOwnerOfThisUserException.class)
     public ResponseEntity<ResponseAPI<?>> YoureNotOwnerOfThisUserException(YoureNotOwnerOfThisUserException e) {
         logger.info("YoureNotOwnerOfThisUserException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
+    @ExceptionHandler(value = UsernameNotFoundException.class)
+    public ResponseEntity<ResponseAPI<?>> UsernameNotFoundException(UsernameNotFoundException e) {
+        logger.info("UsernameNotFoundException => provoked!\n"+e.getMessage());
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
