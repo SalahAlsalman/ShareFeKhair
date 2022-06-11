@@ -6,17 +6,17 @@
 
 ## Endpoints
 
-- register user with roles (student - teacher).
-- login endpoint that will return a cookie.
-- add new class.
-- add session to classes.
-- add teacher to class, and student to class.
-- add note to any session of class.
-- add comments to any notes.
-- delete comment or notes.
+- Register user with roles (student - teacher).
+- Login endpoint that will return a cookie.
+- Add new class.
+- Add session to classes.
+- Add teacher to class, and student to class.
+- Add note to any session of class.
+- Add comments to any notes.
+- Delete comment or notes.
 
 
 
 ## Documentation
-this url contains all endpoints and equipped with body and query strings for example purpose:
+This url contains all endpoints and equipped with body, query strings and path variables:
 https://documenter.getpostman.com/view/21199597/Uz5NiYgE
