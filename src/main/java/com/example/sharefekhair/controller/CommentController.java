@@ -3,6 +3,7 @@ package com.example.sharefekhair.controller;
 import com.example.sharefekhair.DTO.CommentDTO;
 import com.example.sharefekhair.DTO.NoteDTO;
 import com.example.sharefekhair.DTO.ResponseAPI;
+import com.example.sharefekhair.DTO.UpdateCommentDTO;
 import com.example.sharefekhair.service.CommentService;
 import com.example.sharefekhair.service.NoteService;
 import lombok.RequiredArgsConstructor;
@@ -29,10 +30,15 @@ public class CommentController {
         return ResponseEntity.status(200).body(new ResponseAPI<>("Comment Added", 200));
     }
 
-    @DeleteMapping("/{comment_id}/{user_id}")
-    public ResponseEntity<ResponseAPI<?>> deleteComment(@PathVariable Integer comment_id,
-                                                     @PathVariable Integer user_id) {
-        commentService.deleteComment(comment_id,user_id);
+    @PutMapping("/{comment_id}")
+    public ResponseEntity<ResponseAPI<?>> updateComment(@PathVariable Integer comment_id,@RequestBody @Valid UpdateCommentDTO commentDTO){
+        commentService.updateComment(comment_id, commentDTO);
+        return ResponseEntity.status(200).body(new ResponseAPI<>("Comment updated", 200));
+    }
+
+    @DeleteMapping("/{comment_id}")
+    public ResponseEntity<ResponseAPI<?>> deleteComment(@PathVariable Integer comment_id) {
+        commentService.deleteComment(comment_id);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Comment Deleted!",200));
     }
 }

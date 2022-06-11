@@ -1,6 +1,7 @@
 package com.example.sharefekhair.service;
 
 import com.example.sharefekhair.DTO.NoteDTO;
+import com.example.sharefekhair.DTO.UpdateNoteDTO;
 import com.example.sharefekhair.exceptions.*;
 import com.example.sharefekhair.model.*;
 import com.example.sharefekhair.repository.*;
@@ -96,5 +97,20 @@ public class NoteService {
         noteRepository.delete(note);
         user.getNotes().remove(note);
         session.getNotes().remove(note);
+    }
+
+    public void updateNote(Integer note_id, UpdateNoteDTO noteDTO) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
+            throw new UsernameNotFoundException("username is wrong");
+        });
+        Note note = noteRepository.findById(note_id).orElseThrow(()->{
+            throw new NoteIdNotFoundException("note_id is wrong");
+        });
+        if (note.getUser().getId() != user.getId()){
+            throw new YoureNotOwnerOfThisNoteException("you don't own this note");
+        }
+        note.setMessage(noteDTO.getMessage());
+        noteRepository.save(note);
     }
 }

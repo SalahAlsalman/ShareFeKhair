@@ -2,6 +2,7 @@ package com.example.sharefekhair.controller;
 
 import com.example.sharefekhair.DTO.NoteDTO;
 import com.example.sharefekhair.DTO.ResponseAPI;
+import com.example.sharefekhair.DTO.UpdateNoteDTO;
 import com.example.sharefekhair.service.NoteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +26,12 @@ public class NoteController {
     public ResponseEntity<ResponseAPI<?>> addNote(@RequestBody @Valid NoteDTO noteDTO){
         noteService.addNote(noteDTO);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Note Added", 200));
+    }
+
+    @PutMapping("/{note_id}")
+    public ResponseEntity<ResponseAPI<?>> updateNote(@PathVariable Integer note_id, @RequestBody @Valid UpdateNoteDTO noteDTO){
+        noteService.updateNote(note_id, noteDTO);
+        return ResponseEntity.status(200).body(new ResponseAPI<>("Note updated", 200));
     }
 
     @DeleteMapping("/{note_id}")

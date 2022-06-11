@@ -80,6 +80,12 @@ public class ControllerAdviceHandler {
         return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
     }
 
+    @ExceptionHandler(value = YoureNotOwnerOfThisCommentException.class)
+    public ResponseEntity<ResponseAPI<?>> YoureNotOwnerOfThisCommentException(YoureNotOwnerOfThisCommentException e) {
+        logger.info("YoureNotOwnerOfThisCommentException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+    }
+
     @ExceptionHandler(value = YoureNotOwnerOfThisUserException.class)
     public ResponseEntity<ResponseAPI<?>> YoureNotOwnerOfThisUserException(YoureNotOwnerOfThisUserException e) {
         logger.info("YoureNotOwnerOfThisUserException => provoked!\n"+e.getMessage());
