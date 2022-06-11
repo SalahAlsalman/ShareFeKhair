@@ -133,12 +133,12 @@
 >- Delete user with user_id.
 
 ## Dependancies:
->1. Spring web
->2. Project lombock
->3. Validation
->4. JPA
->5. Spring security 
->6. MySQL
+1. Spring web
+2. Project lombock
+3. Validation
+4. JPA
+5. Spring security 
+6. MySQL
 
 
 
