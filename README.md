@@ -4,7 +4,7 @@
 
 
 
-##Endpoints
+#Endpoints
 
 - register user with roles (student - teacher).
 - login endpoint that will return a cookie.
