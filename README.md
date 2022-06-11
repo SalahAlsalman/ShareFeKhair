@@ -75,7 +75,11 @@
 
 ## Table Relationships:
 
-![alt text](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/Table%20relationship.png?raw=true)
+![Table Relationship image](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/Table%20relationship.png?raw=true)
+
+## Class Diagram:
+
+![class diagram](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/Class%20Diagram.png?raw=true)
 
 
 ## Endpoints
