@@ -4,7 +4,7 @@
 
 
 
-# Endpoints
+## Endpoints
 
 - register user with roles (student - teacher).
 - login endpoint that will return a cookie.
@@ -14,3 +14,9 @@
 - add note to any session of class.
 - add comments to any notes.
 - delete comment or notes.
+
+
+
+## Documentation
+this url contains all endpoints and equipped with body and query strings for example purpose:
+https://documenter.getpostman.com/view/21199597/Uz5NiYgE
