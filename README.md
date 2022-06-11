@@ -1,9 +1,9 @@
 # Share Fe Alkhair
 **Share Fe Alkhair** is a free and open source software application for managing the class for any school, university, or other. It helps the teacher and his students to connect with each to share class notes, messages and improve the learning path.
 
-# Project requirements:
+# Project Requirements:
 
-##Tables:
+## Tables:
 
 1- class:
 
