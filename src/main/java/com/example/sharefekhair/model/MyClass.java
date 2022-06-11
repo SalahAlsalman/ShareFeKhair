@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import java.util.List;
 import java.util.Set;
 
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
@@ -34,12 +35,12 @@ public class MyClass {
             inverseJoinColumns = { @JoinColumn(name = "class_id") }
     )
     @JsonIgnore
-    private Set<Student> studentSet;
+    private List<Student> studentSet;
 
-    @OneToMany(mappedBy = "myClass")
+    @OneToMany(mappedBy = "myClass",cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE }, orphanRemoval = true)
 //    @OneToMany(mappedBy = "myClass",cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE })
     @JsonIgnore
-    private Set<MySession> sessions;
+    private List<MySession> sessions;
 
     @Override
     public String toString() {

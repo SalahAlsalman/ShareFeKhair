@@ -51,8 +51,8 @@ public class StudentService {
         });
         if (myClass.getSessions().size() >0){
             List<MySession> sessions = new ArrayList<>(myClass.getSessions());
-            Set<MySession> sessionSet = new HashSet<>(sessions);
-            myClass.setSessions(sessionSet);
+//            Set<MySession> sessionSet = new HashSet<>(sessions);
+            myClass.setSessions(sessions);
         }
         student.getClasses().add(myClass);
         myClass.getStudentSet().add(student);

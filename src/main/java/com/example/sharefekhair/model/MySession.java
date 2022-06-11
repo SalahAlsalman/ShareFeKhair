@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 import java.util.Set;
 
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
@@ -28,11 +29,18 @@ public class MySession {
     @NotNull(message = "class_id is required")
     private MyClass myClass;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE }, orphanRemoval = true)
     @JoinTable(
             name = "notes_sessions",
             joinColumns = { @JoinColumn(name = "note_id") },
             inverseJoinColumns = { @JoinColumn(name = "session_id"),}
     )
-    private Set<Note> notes;
+    private List<Note> notes;
+
+    @Override
+    public String toString() {
+        return "MySession{" +
+                "id=" + id +
+                '}';
+    }
 }

@@ -60,7 +60,7 @@ public class CommentService {
             Teacher teacher = teacherRepository.findById(user.getId()).orElseThrow(() -> {
                 throw new StudentNotFoundException("teacher_id is wrong!");
             });
-            List<MyClass> userClasses = new ArrayList<>(teacher.getClasses());
+            List<MyClass> userClasses = teacher.getClasses();
             for (int i = 0; i < userClasses.size(); i++) {
                 MyClass myClass = userClasses.get(i);
                 if (myClass.getId().equals(classIdOfNote)) {

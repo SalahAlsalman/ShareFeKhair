@@ -1,8 +1,6 @@
 package com.example.sharefekhair.service;
 
-import com.example.sharefekhair.exceptions.TeacherNotFoundException;
-import com.example.sharefekhair.exceptions.UserIdNotFoundException;
-import com.example.sharefekhair.exceptions.YoureNotOwnerOfThisUserException;
+import com.example.sharefekhair.exceptions.*;
 import com.example.sharefekhair.model.*;
 import com.example.sharefekhair.repository.*;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -24,6 +23,8 @@ public class UserService {
     private final StudentRepository studentRepository;
     private final ClassRepository classRepository;
     private final SessionRepository sessionRepository;
+    private final NoteRepository noteRepository;
+    private final CommentRepository commentRepository;
     private final StudentService studentService;
     private final TeacherService teacherService;
 
@@ -37,44 +38,50 @@ public class UserService {
         user.setPassword(hashedPassword);
         userRepository.save(user);
         if (user.getRole().equals("student"))
-            studentService.addStudent(new Student(null, user, new HashSet<>()));
+            studentService.addStudent(new Student(null, user, new ArrayList<>()));
         if (user.getRole().equals("teacher"))
-            teacherService.addTeacher(new Teacher(null, user, new HashSet<>()));
+            teacherService.addTeacher(new Teacher(null, user, new ArrayList<>()));
     }
 
     //TODO: notWorking
     public void deleteUser(Integer user_id) {
-        MyUser user = userRepository.findById(user_id).orElseThrow(()->{
-            throw new UserIdNotFoundException("user_id is wrong");
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(() -> {
+            throw new UsernameNotFoundException("username is wrong");
         });
-        if (user.getRole().equals("teacher")){
-            Teacher teacher = teacherRepository.findById(user.getId()).orElseThrow(()->{
+        //check if user owns this account
+        if (user.getId() != user_id) {
+            throw new NoRightsException("you don't own this account");
+        }
+
+        //check if he's teacher
+        if (user.getRole().equals("teacher")) {
+            Teacher teacher = teacherRepository.findById(user.getId()).orElseThrow(() -> {
                 throw new TeacherNotFoundException("user_id is wrong");
             });
-            List<MyClass> classes = new ArrayList<>(teacher.getClasses());
-            for (int i = 0; i < classes.size(); i++) {
-                MyClass myClass = classes.get(i);
-                myClass.setTeacher(null);
-                List<MySession> sessions = new ArrayList<>(myClass.getSessions());
-                for (int j = 0; j < sessions.size(); j++) {
-                    MySession session = sessions.get(i);
-                    session.setMyClass(myClass);
-                }
-                myClass.setSessions(new HashSet<>(sessions));
-                classRepository.save(myClass);
-                teacherRepository.save(teacher);
-                //delete teacher_id from session too
-            }
-            userRepository.delete(user);
+            List<MyClass> classes = classRepository.findMyClassesByTeacher(teacher).get();
+            classRepository.deleteAll(classes);
             teacherRepository.delete(teacher);
-        }
-        if (user.getRole().equals("student")){
-            Student student = studentRepository.findById(user.getId()).orElseThrow(()->{
-                throw new TeacherNotFoundException("student_id is wrong");
-            });
             userRepository.delete(user);
-            studentRepository.delete(student);
+            return;
         }
+        //check if he's student
+        if (user.getRole().equals("student")) {
+            Student student = studentRepository.findById(user_id).orElseThrow(() -> {
+                throw new StudentNotFoundException("user_id is wrong");
+            });
+            List<MyClass> classes = student.getClasses();
+            for (int i = 0; i < classes.size(); i++) {
+                classes.get(i).getStudentSet().remove(student);
+                classRepository.save(classes.get(i));
+                student.getClasses().remove(classes.get(i));
+            }
+            studentRepository.delete(student);
+            userRepository.delete(user);
+            return;
+        }
+        throw new UserIdNotFoundException("you're not student or teacher !");
     }
 }
+
 

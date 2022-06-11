@@ -41,7 +41,7 @@ public class SessionService {
             MyClass myClass2 = classRepository.findById(mySessionDTO.getClass_id()).orElseThrow(()->{
                 throw new MyClassNotFoundException("class_id is wrong");
             });
-            MySession mySession = new MySession(null,myClass2,new HashSet<>());
+            MySession mySession = new MySession(null,myClass2,new ArrayList<>());
             sessionRepository.save(mySession);
             return;
         }

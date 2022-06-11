@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 @NoArgsConstructor
@@ -35,9 +36,9 @@ public class Note {
     @JsonIgnore
     private MySession mySession;
 
-    @OneToMany(mappedBy = "note")
+    @OneToMany(mappedBy = "note",cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE }, orphanRemoval = true)
 //    @OneToMany(mappedBy = "note",cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE })
-    private Set<Comment> comments;
+    private List<Comment> comments;
 
     public Note(Integer id, String message, Date messageDate, MyUser user, MySession mySession) {
         this.id = id;
@@ -45,5 +46,15 @@ public class Note {
         this.messageDate = new Date();
         this.user = user;
         this.mySession = mySession;
+    }
+
+    @Override
+    public String toString() {
+        return "Note{" +
+                "id=" + id +
+                ", message='" + message + '\'' +
+                ", messageDate=" + messageDate +
+                ", user=" + user +
+                '}';
     }
 }

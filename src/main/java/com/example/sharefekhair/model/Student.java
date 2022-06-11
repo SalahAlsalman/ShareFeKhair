@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 import java.util.Set;
 
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
@@ -24,6 +25,6 @@ public class Student {
     private MyUser user;
 
     @ManyToMany(mappedBy = "studentSet", cascade = CascadeType.ALL)
-    private Set<MyClass> classes;
+    private List<MyClass> classes;
 
 }

@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 import java.util.Set;
 
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
@@ -23,6 +24,6 @@ public class Teacher {
     private MyUser user;
 
     @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL)
-    private Set<MyClass> classes;
+    private List<MyClass> classes;
 
 }

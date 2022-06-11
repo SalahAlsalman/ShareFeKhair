@@ -22,19 +22,12 @@ public class AuthController {
         return ResponseEntity.status(201).body(new ResponseAPI<>("User added", 201));
     }
 
-    //login
+
     @PostMapping("/login")
     public ResponseEntity<ResponseAPI<?>> login(){
         return ResponseEntity.status(200).body(new ResponseAPI<>("Logged",200));
     }
 
-
-    //TODO: not working
-    @DeleteMapping("/{user_id}")
-    public ResponseEntity<ResponseAPI<?>> deleteUser(@PathVariable Integer user_id){
-        userService.deleteUser(user_id);
-        return ResponseEntity.status(200).body(new ResponseAPI<>("user deleted", 200));
-    }
 
 
 }

@@ -20,7 +20,16 @@ public class UserController {
         return ResponseEntity.status(200).body(new ResponseAPI<>(userService.getUsers(),200));
     }
 
+    //TODO: add put
+//    @PutMapping
 
+
+
+    @DeleteMapping("/{user_id}")
+    public ResponseEntity<ResponseAPI<?>> deleteUser(@PathVariable Integer user_id){
+        userService.deleteUser(user_id);
+        return ResponseEntity.status(200).body(new ResponseAPI<>("user deleted", 200));
+    }
 
 
 }
