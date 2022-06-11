@@ -15145,3 +15145,61 @@ username is wrong
 2022-06-11 19:20:26.619  INFO 29508 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 29508 (C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair)
 2022-06-11 19:20:26.622  INFO 29508 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
 2022-06-11 19:20:29.220  INFO 29508 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.808 seconds (JVM running for 3.141)
+2022-06-11 20:33:56.221  INFO 5964 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 5964 (C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair)
+2022-06-11 20:33:56.222  INFO 5964 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-11 20:34:08.163 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table class drop foreign key FK28f8ba9n0feejnamfay479ae1
+2022-06-11 20:34:08.335 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table class_sessions drop foreign key FKf678987n9vgb2l7gi94ishv7y
+2022-06-11 20:34:08.508 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table class_sessions drop foreign key FKq8hf6ude9jmctpq734kjfjtse
+2022-06-11 20:34:08.680 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table comment drop foreign key FK8kcum44fvpupyw6f5baccx25c
+2022-06-11 20:34:08.851 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table comments_note drop foreign key FKkwimndr7q1w8pi1vjgxjq60qp
+2022-06-11 20:34:09.023 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table comments_note drop foreign key FKt6t49xlcfilimdf3ifgggym7q
+2022-06-11 20:34:09.194 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table note drop foreign key FKmoddtnuw3yy6ct34xnw6u0boh
+2022-06-11 20:34:09.365 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table notes_sessions drop foreign key FKgemjjiwf6spkrisegpty750y0
+2022-06-11 20:34:09.537 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table notes_sessions drop foreign key FK5yfy4od9py01bvs1eeu44basr
+2022-06-11 20:34:09.709 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table student drop foreign key FKmlyxb44mx4v92t1eq5v655fk3
+2022-06-11 20:34:09.882 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table student_class drop foreign key FK880iw643e62mywemj8i8dj8va
+2022-06-11 20:34:10.053 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table student_class drop foreign key FKsw1pgdf9lvuwysk34fxiud2jj
+2022-06-11 20:34:10.225 ERROR 5964 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table teacher drop foreign key FK95g4kwoji012jrf9u2a5rmvxp
+2022-06-11 20:34:13.116 ERROR 5964 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-06-11 20:34:33.548  INFO 27700 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 27700 (C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\Documents\Visual Code Projectos\tuwaiq\ShareFeKhair)
+2022-06-11 20:34:33.549  INFO 27700 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-11 20:34:45.481 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table class drop foreign key FK28f8ba9n0feejnamfay479ae1
+2022-06-11 20:34:45.657 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table class_sessions drop foreign key FKf678987n9vgb2l7gi94ishv7y
+2022-06-11 20:34:45.831 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table class_sessions drop foreign key FKq8hf6ude9jmctpq734kjfjtse
+2022-06-11 20:34:46.006 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table comment drop foreign key FK8kcum44fvpupyw6f5baccx25c
+2022-06-11 20:34:46.181 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table comments_note drop foreign key FKkwimndr7q1w8pi1vjgxjq60qp
+2022-06-11 20:34:46.357 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table comments_note drop foreign key FKt6t49xlcfilimdf3ifgggym7q
+2022-06-11 20:34:46.532 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table note drop foreign key FKmoddtnuw3yy6ct34xnw6u0boh
+2022-06-11 20:34:46.707 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table notes_sessions drop foreign key FKgemjjiwf6spkrisegpty750y0
+2022-06-11 20:34:46.882 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table notes_sessions drop foreign key FK5yfy4od9py01bvs1eeu44basr
+2022-06-11 20:34:47.057 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table student drop foreign key FKmlyxb44mx4v92t1eq5v655fk3
+2022-06-11 20:34:47.232 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table student_class drop foreign key FK880iw643e62mywemj8i8dj8va
+2022-06-11 20:34:47.406 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table student_class drop foreign key FKsw1pgdf9lvuwysk34fxiud2jj
+2022-06-11 20:34:47.581 ERROR 27700 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table teacher drop foreign key FK95g4kwoji012jrf9u2a5rmvxp
+2022-06-11 20:34:50.512 ERROR 27700 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
