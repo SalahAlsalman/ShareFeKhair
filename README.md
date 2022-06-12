@@ -79,7 +79,7 @@
 
 ## Class Diagram:
 
-![class diagram](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/Class%20Diagram.png?raw=true)
+![class diagram](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/Class%20Diagram3.png?raw=true)
 
 
 ## Endpoints
