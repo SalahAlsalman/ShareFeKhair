@@ -24,7 +24,7 @@ public class Student {
     @NotNull(message = "student_id is required")
     private MyUser user;
 
-    @ManyToMany(mappedBy = "studentSet", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "studentSet")
     private List<MyClass> classes;
 
 }
