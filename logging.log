@@ -250,3 +250,5 @@ Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
 2022-06-12 11:26:40.801  INFO 72151 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 72151 (/Users/salahalsalman/Documents/GitHub/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/Documents/GitHub/ShareFeKhair)
 2022-06-12 11:26:40.803  INFO 72151 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
 2022-06-12 11:26:59.125  INFO 72151 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 18.686 seconds (JVM running for 19.323)
+2022-06-12 11:29:43.883 ERROR 72151 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table student_class drop foreign key FK880iw643e62mywemj8i8dj8va
+2022-06-12 11:29:44.619 ERROR 72151 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000478: Unsuccessful: alter table student_class drop foreign key FKsw1pgdf9lvuwysk34fxiud2jj
