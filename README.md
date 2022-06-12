@@ -75,7 +75,7 @@
 
 ## Table Relationships:
 
-![Table Relationship image](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/Table%20relationship.png?raw=true)
+![Table Relationship image](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/TableRelationship.png?raw=true)
 
 ## Class Diagram:
 
