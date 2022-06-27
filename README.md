@@ -1,5 +1,5 @@
 # Share Fe Alkhair
-**Share Fe Alkhair** is a free and open source software application for managing the class for any school, university, or other. It helps the teacher and his students to connect with each to share class notes, messages and improve the learning path.
+**Share Fe Alkhair** is a back-end software application for managing the class for any school, university, or other. It helps the teacher and his students to connect with each to share class notes, messages and improve the learning path.
 
 # Project Requirements:
 
@@ -75,7 +75,7 @@
 
 ## Table Relationships:
 
-![Table Relationship image](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/Table%20relationship.png?raw=true)
+![Table Relationship image](https://github.com/SalahAlsalman/ShareFeKhair/blob/master/src/main/resources/images/TableRelationship.png?raw=true)
 
 ## Class Diagram:
 
