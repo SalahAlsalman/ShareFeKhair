@@ -20,6 +20,11 @@ public class ClassController {
         return ResponseEntity.status(200).body(new ResponseAPI<>(classService.getClasses(),200));
     }
 
+    @GetMapping("/myclasses")
+    public ResponseEntity<ResponseAPI<?>> getClassesMyClasses() {
+        return ResponseEntity.status(200).body(new ResponseAPI<>(classService.getMyClasses(),200));
+    }
+
     @PostMapping
     public ResponseEntity<ResponseAPI<?>> addClass(@RequestBody @Valid MyClass myClass) {
         classService.addClass(myClass);

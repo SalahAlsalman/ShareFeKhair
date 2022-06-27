@@ -1,377 +1,1311 @@
-2022-06-27 12:37:22.035  INFO 44523 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 44523 (/Users/salahalsalman/Documents/GitHub/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/Documents/GitHub/ShareFeKhair)
-2022-06-27 12:37:22.042  INFO 44523 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
-2022-06-27 12:37:26.990  INFO 44523 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 5.648 seconds (JVM running for 6.65)
-2022-06-27 13:29:14.750 ERROR 44523 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 13:29:14 AST 2022}
-2022-06-27 13:29:17.232 ERROR 44523 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 13:29:17 AST 2022}
-2022-06-27 13:54:30.901  INFO 48630 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 48630 (/Users/salahalsalman/Documents/GitHub/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/Documents/GitHub/ShareFeKhair)
-2022-06-27 13:54:30.904  INFO 48630 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
-2022-06-27 13:54:35.791  INFO 48630 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 5.335 seconds (JVM running for 6.224)
-2022-06-27 13:54:55.742  WARN 48630 --- [http-nio-8080-exec-3] c.e.s.advice.ControllerAdviceHandler     : MethodArgumentNotValidException => provoked!
-role must be (student|teacher)
-2022-06-27 14:25:33.922 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:25:33 AST 2022}
-2022-06-27 14:25:34.547 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:25:34 AST 2022}
-2022-06-27 14:25:34.594 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:25:34 AST 2022}
-2022-06-27 14:26:34.086 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:26:34 AST 2022}
-2022-06-27 14:30:26.477 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:30:26 AST 2022}
-2022-06-27 14:30:26.737 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:30:26 AST 2022}
-2022-06-27 14:30:26.796 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:30:26 AST 2022}
-2022-06-27 14:30:48.301 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:30:48 AST 2022}
-2022-06-27 14:31:45.700 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:31:45 AST 2022}
-2022-06-27 14:31:45.789 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:31:45 AST 2022}
-2022-06-27 14:31:45.825 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:31:45 AST 2022}
-2022-06-27 14:31:54.599 ERROR 48630 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'omar' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
-2022-06-27 14:31:54.890  WARN 48630 --- [http-nio-8080-exec-9] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'omar' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
-2022-06-27 14:32:24.591 ERROR 48630 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'omar2' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
-2022-06-27 14:32:24.600  WARN 48630 --- [http-nio-8080-exec-3] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'omar2' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
-2022-06-27 14:33:05.413  WARN 48630 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : MethodArgumentNotValidException => provoked!
-email must be valid
-2022-06-27 14:33:26.032  WARN 48630 --- [http-nio-8080-exec-4] c.e.s.advice.ControllerAdviceHandler     : MethodArgumentNotValidException => provoked!
-email must be valid
-2022-06-27 14:33:38.130  WARN 48630 --- [http-nio-8080-exec-5] c.e.s.advice.ControllerAdviceHandler     : MethodArgumentNotValidException => provoked!
-email must be valid
-2022-06-27 14:39:54.249 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:39:54 AST 2022}
-2022-06-27 14:39:54.762 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:39:54 AST 2022}
-2022-06-27 14:39:54.803 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:39:54 AST 2022}
-2022-06-27 14:43:01.737 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:43:01 AST 2022}
-2022-06-27 14:43:02.077 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:43:02 AST 2022}
-2022-06-27 14:43:02.091 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:43:02 AST 2022}
-2022-06-27 14:53:29.993 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:53:29 AST 2022}
-2022-06-27 14:53:30.354 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:53:30 AST 2022}
-2022-06-27 14:53:30.382 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:53:30 AST 2022}
-2022-06-27 14:53:30.926 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:53:30 AST 2022}
-2022-06-27 14:53:30.935 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:53:30 AST 2022}
-2022-06-27 14:53:48.333 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:53:48 AST 2022}
-2022-06-27 14:54:19.247 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:54:19 AST 2022}
-2022-06-27 14:54:19.247 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:54:19 AST 2022}
-2022-06-27 14:54:25.816 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:54:25 AST 2022}
-2022-06-27 14:55:05.877 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:55:05 AST 2022}
-2022-06-27 14:55:13.851 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:55:13 AST 2022}
-2022-06-27 14:55:50.829 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:55:50 AST 2022}
-2022-06-27 14:56:02.122 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:02 AST 2022}
-2022-06-27 14:56:11.032 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:11 AST 2022}
-2022-06-27 14:56:11.098 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:11 AST 2022}
-2022-06-27 14:56:11.099 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:11 AST 2022}
-2022-06-27 14:56:11.147 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:11 AST 2022}
-2022-06-27 14:56:11.178 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:11 AST 2022}
-2022-06-27 14:56:18.706 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:18 AST 2022}
-2022-06-27 14:56:24.724 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:24 AST 2022}
-2022-06-27 14:56:27.509 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:27 AST 2022}
-2022-06-27 14:56:27.516 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:27 AST 2022}
-2022-06-27 14:56:27.525 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:27 AST 2022}
-2022-06-27 14:56:27.571 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:27 AST 2022}
-2022-06-27 14:56:27.573 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:27 AST 2022}
-2022-06-27 14:56:47.756 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:47 AST 2022}
-2022-06-27 14:56:47.756 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:47 AST 2022}
-2022-06-27 14:56:47.801 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:47 AST 2022}
-2022-06-27 14:56:47.802 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:47 AST 2022}
-2022-06-27 14:56:49.729 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:49 AST 2022}
-2022-06-27 14:56:49.729 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:49 AST 2022}
-2022-06-27 14:56:49.814 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:49 AST 2022}
-2022-06-27 14:56:49.816 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:56:49 AST 2022}
-2022-06-27 14:57:10.590 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:10 AST 2022}
-2022-06-27 14:57:10.590 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:10 AST 2022}
-2022-06-27 14:57:10.590 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:10 AST 2022}
-2022-06-27 14:57:10.592 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:10 AST 2022}
-2022-06-27 14:57:16.085 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:16 AST 2022}
-2022-06-27 14:57:16.085 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:16 AST 2022}
-2022-06-27 14:57:16.120 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:16 AST 2022}
-2022-06-27 14:57:16.123 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:16 AST 2022}
-2022-06-27 14:57:22.200 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:22 AST 2022}
-2022-06-27 14:57:22.200 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:22 AST 2022}
-2022-06-27 14:57:22.234 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:22 AST 2022}
-2022-06-27 14:57:22.238 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:57:22 AST 2022}
-2022-06-27 14:58:58.059 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:58:58 AST 2022}
-2022-06-27 14:59:18.913 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:59:18 AST 2022}
-2022-06-27 14:59:23.903 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:59:23 AST 2022}
-2022-06-27 14:59:27.841 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:59:27 AST 2022}
-2022-06-27 14:59:35.671 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:59:35 AST 2022}
-2022-06-27 14:59:37.738 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:59:37 AST 2022}
-2022-06-27 14:59:40.220 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:59:40 AST 2022}
-2022-06-27 14:59:40.220 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:59:40 AST 2022}
-2022-06-27 14:59:40.253 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:59:40 AST 2022}
-2022-06-27 14:59:40.262 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 14:59:40 AST 2022}
-2022-06-27 15:00:42.698 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:00:42 AST 2022}
-2022-06-27 15:00:45.710 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:00:45 AST 2022}
-2022-06-27 15:00:45.710 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:00:45 AST 2022}
-2022-06-27 15:00:45.759 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:00:45 AST 2022}
-2022-06-27 15:00:45.761 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:00:45 AST 2022}
-2022-06-27 15:01:22.811 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:01:22 AST 2022}
-2022-06-27 15:01:22.811 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:01:22 AST 2022}
-2022-06-27 15:01:37.880 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:01:37 AST 2022}
-2022-06-27 15:01:37.880 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:01:37 AST 2022}
-2022-06-27 15:01:50.516 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:01:50 AST 2022}
-2022-06-27 15:01:50.516 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:01:50 AST 2022}
-2022-06-27 15:01:51.886 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:01:51 AST 2022}
-2022-06-27 15:01:51.886 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:01:51 AST 2022}
-2022-06-27 15:02:30.144 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:02:30 AST 2022}
-2022-06-27 15:02:38.825 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:02:38 AST 2022}
-2022-06-27 15:02:47.614 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:02:47 AST 2022}
-2022-06-27 15:03:01.967 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:03:01 AST 2022}
-2022-06-27 15:03:20.413 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:03:20 AST 2022}
-2022-06-27 15:03:20.419 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:03:20 AST 2022}
-2022-06-27 15:03:22.521 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:03:22 AST 2022}
-2022-06-27 15:03:46.688 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:03:46 AST 2022}
-2022-06-27 15:03:48.043 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:03:48 AST 2022}
-2022-06-27 15:03:50.502 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:03:50 AST 2022}
-2022-06-27 15:03:50.519 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:03:50 AST 2022}
-2022-06-27 15:15:25.168 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:15:25 AST 2022}
-2022-06-27 15:15:25.168 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:15:25 AST 2022}
-2022-06-27 15:18:37.792 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:18:37 AST 2022}
-2022-06-27 15:19:22.355 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:19:22 AST 2022}
-2022-06-27 15:19:22.361 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:19:22 AST 2022}
-2022-06-27 15:20:54.794 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:20:54 AST 2022}
-2022-06-27 15:20:54.794 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:20:54 AST 2022}
-2022-06-27 15:22:36.069 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:22:36 AST 2022}
-2022-06-27 15:22:36.069 ERROR 48630 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:22:36 AST 2022}
-2022-06-27 15:25:05.864 ERROR 48630 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:25:05 AST 2022}
-2022-06-27 15:25:05.864 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:25:05 AST 2022}
-2022-06-27 15:26:20.485 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:26:20 AST 2022}
-2022-06-27 15:26:20.502 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:26:20 AST 2022}
-2022-06-27 15:26:49.819 ERROR 48630 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:26:49 AST 2022}
-2022-06-27 15:27:00.839 ERROR 48630 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:27:00 AST 2022}
-2022-06-27 15:27:00.839 ERROR 48630 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:27:00 AST 2022}
-2022-06-27 15:35:45.762 ERROR 48630 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:35:45 AST 2022}
-2022-06-27 15:35:50.235 ERROR 48630 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:35:50 AST 2022}
-2022-06-27 15:35:55.006 ERROR 48630 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:35:54 AST 2022}
-2022-06-27 15:36:49.061 ERROR 48630 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:36:49 AST 2022}
-2022-06-27 15:36:52.513 ERROR 48630 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
-HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
- {exception=Full authentication is required to access this resource, timestamp=Mon Jun 27 15:36:52 AST 2022}
+2022-06-28 00:02:28.664  INFO 41236 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 41236 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
+2022-06-28 00:02:28.669  INFO 41236 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 00:02:32.246  INFO 41236 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 3.809 seconds (JVM running for 4.187)
+2022-06-28 00:02:49.312  INFO 41236 --- [http-nio-8080-exec-6] c.e.s.advice.ControllerAdviceHandler     : MyClassNotFoundException => provoked!
+class_id is wrong
+2022-06-28 00:03:35.751 ERROR 41236 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'id' not found.
+2022-06-28 00:03:35.758 ERROR 41236 --- [http-nio-8080-exec-3] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [SELECT * FROM sharefekhair.student_class where student_id = ?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.findMyClassesByStudent(Unknown Source)
+	at com.example.sharefekhair.service.ClassService.getMyClasses(ClassService.java:43)
+	at com.example.sharefekhair.controller.ClassController.getClassesMyClasses(ClassController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.loader.Loader.doList(Loader.java:2871)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2186)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1204)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:177)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 98 more
+Caused by: java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at org.hibernate.type.descriptor.sql.IntegerTypeDescriptor$2.doExtract(IntegerTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329)
+	at org.hibernate.loader.Loader.extractKeysFromResultSet(Loader.java:811)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:735)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1047)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:998)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:967)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	... 123 more
+
+2022-06-28 00:03:51.547 ERROR 41236 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'id' not found.
+2022-06-28 00:03:51.548 ERROR 41236 --- [http-nio-8080-exec-6] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [SELECT * FROM sharefekhair.student_class where student_id = ?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.findMyClassesByStudent(Unknown Source)
+	at com.example.sharefekhair.service.ClassService.getMyClasses(ClassService.java:43)
+	at com.example.sharefekhair.controller.ClassController.getClassesMyClasses(ClassController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.loader.Loader.doList(Loader.java:2871)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2186)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1204)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:177)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 98 more
+Caused by: java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at org.hibernate.type.descriptor.sql.IntegerTypeDescriptor$2.doExtract(IntegerTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329)
+	at org.hibernate.loader.Loader.extractKeysFromResultSet(Loader.java:811)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:735)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1047)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:998)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:967)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	... 123 more
+
+2022-06-28 00:07:01.606  INFO 11288 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 11288 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
+2022-06-28 00:07:01.608  INFO 11288 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 00:07:04.768  INFO 11288 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 3.39 seconds (JVM running for 3.794)
+2022-06-28 00:07:09.694 ERROR 11288 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 00:07:09 AST 2022}
+2022-06-28 00:07:12.921 ERROR 11288 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 00:07:12 AST 2022}
+2022-06-28 00:07:35.667 ERROR 11288 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'id' not found.
+2022-06-28 00:07:35.674 ERROR 11288 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [SELECT * FROM sharefekhair.student_class where student_id = ?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.findMyClassesByStudent(Unknown Source)
+	at com.example.sharefekhair.service.ClassService.getMyClasses(ClassService.java:43)
+	at com.example.sharefekhair.controller.ClassController.getClassesMyClasses(ClassController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.loader.Loader.doList(Loader.java:2871)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2186)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1204)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:177)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 98 more
+Caused by: java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at org.hibernate.type.descriptor.sql.IntegerTypeDescriptor$2.doExtract(IntegerTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329)
+	at org.hibernate.loader.Loader.extractKeysFromResultSet(Loader.java:811)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:735)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1047)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:998)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:967)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	... 123 more
+
+2022-06-28 00:09:12.473  INFO 9692 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 9692 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
+2022-06-28 00:09:12.475  INFO 9692 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 00:09:14.675  INFO 9692 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.432 seconds (JVM running for 2.814)
+2022-06-28 00:09:16.767 ERROR 9692 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'id' not found.
+2022-06-28 00:09:16.772 ERROR 9692 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [SELECT * FROM sharefekhair.student_class where student_id = ?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.findMyClassesByStudent(Unknown Source)
+	at com.example.sharefekhair.service.ClassService.getMyClasses(ClassService.java:43)
+	at com.example.sharefekhair.controller.ClassController.getClassesMyClasses(ClassController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.loader.Loader.doList(Loader.java:2871)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2186)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1204)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:177)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 98 more
+Caused by: java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at org.hibernate.type.descriptor.sql.IntegerTypeDescriptor$2.doExtract(IntegerTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329)
+	at org.hibernate.loader.Loader.extractKeysFromResultSet(Loader.java:811)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:735)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1047)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:998)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:967)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	... 123 more
+
+2022-06-28 00:10:32.268  INFO 42988 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 42988 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
+2022-06-28 00:10:32.270  INFO 42988 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 00:10:34.549  INFO 42988 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.529 seconds (JVM running for 2.905)
+2022-06-28 00:10:42.524 ERROR 42988 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'id' not found.
+2022-06-28 00:10:42.530 ERROR 42988 --- [http-nio-8080-exec-1] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [SELECT * FROM sharefekhair.student_class where student_id = ?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.findMyClassesByStudent(Unknown Source)
+	at com.example.sharefekhair.service.ClassService.getMyClasses(ClassService.java:43)
+	at com.example.sharefekhair.controller.ClassController.getClassesMyClasses(ClassController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.loader.Loader.doList(Loader.java:2871)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2186)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1204)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:177)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 98 more
+Caused by: java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at org.hibernate.type.descriptor.sql.IntegerTypeDescriptor$2.doExtract(IntegerTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329)
+	at org.hibernate.loader.Loader.extractKeysFromResultSet(Loader.java:811)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:735)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1047)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:998)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:967)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	... 123 more
+
+2022-06-28 00:12:14.203  INFO 5440 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 5440 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
+2022-06-28 00:12:14.205  INFO 5440 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 00:12:16.561  INFO 5440 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.594 seconds (JVM running for 2.962)
+2022-06-28 00:12:19.453 ERROR 5440 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'id' not found.
+2022-06-28 00:12:19.459 ERROR 5440 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [SELECT * FROM sharefekhair.student_class where student_id = ?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy137.findMyClassesByStudent(Unknown Source)
+	at com.example.sharefekhair.service.ClassService.getMyClasses(ClassService.java:43)
+	at com.example.sharefekhair.controller.ClassController.getClassesMyClasses(ClassController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.loader.Loader.doList(Loader.java:2871)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2186)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1204)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:177)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 98 more
+Caused by: java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at org.hibernate.type.descriptor.sql.IntegerTypeDescriptor$2.doExtract(IntegerTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329)
+	at org.hibernate.loader.Loader.extractKeysFromResultSet(Loader.java:811)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:735)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1047)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:998)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:967)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	... 123 more
+
+2022-06-28 00:13:20.547  INFO 35416 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 35416 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
+2022-06-28 00:13:20.549  INFO 35416 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 00:13:22.839  INFO 35416 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.533 seconds (JVM running for 2.898)
+2022-06-28 00:13:25.683 ERROR 35416 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'student.student_class' doesn't exist
+2022-06-28 00:13:25.688 ERROR 35416 --- [http-nio-8080-exec-1] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy137.findMyClassesByStudent(Unknown Source)
+	at com.example.sharefekhair.service.ClassService.getMyClasses(ClassService.java:43)
+	at com.example.sharefekhair.controller.ClassController.getClassesMyClasses(ClassController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:67)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2322)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2075)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2186)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1204)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:177)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 98 more
+Caused by: java.sql.SQLSyntaxErrorException: Table 'student.student_class' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
+	... 129 more
+
+2022-06-28 00:15:44.518  INFO 39152 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 39152 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
+2022-06-28 00:15:44.519  INFO 39152 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 00:15:46.747  INFO 39152 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 2.461 seconds (JVM running for 2.839)
+2022-06-28 00:15:49.040 ERROR 39152 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'id' not found.
+2022-06-28 00:15:49.047 ERROR 39152 --- [http-nio-8080-exec-1] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute query; SQL [SELECT * FROM student_class where student_id = ?]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy2/jdk.proxy2.$Proxy137.findMyClassesByStudent(Unknown Source)
+	at com.example.sharefekhair.service.ClassService.getMyClasses(ClassService.java:43)
+	at com.example.sharefekhair.controller.ClassController.getClassesMyClasses(ClassController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.loader.Loader.doList(Loader.java:2871)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2186)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1204)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:177)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:128)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:159)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 98 more
+Caused by: java.sql.SQLException: Column 'id' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:584)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:851)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at org.hibernate.type.descriptor.sql.IntegerTypeDescriptor$2.doExtract(IntegerTypeDescriptor.java:62)
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253)
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243)
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329)
+	at org.hibernate.loader.Loader.extractKeysFromResultSet(Loader.java:811)
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:735)
+	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1047)
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:998)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:967)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	... 123 more
+
