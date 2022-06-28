@@ -9,8 +9,10 @@ import java.sql.Date;
 
 @AllArgsConstructor @Data
 public class NoteDTO {
-    @NotEmpty(message = "message is required")
-    private String message;
+    @NotEmpty(message = "title is required")
+    private String title;
+    @NotEmpty(message = "body is required")
+    private String body;
     @NotNull(message = "session_id is required")
     private Integer session_id;
 }

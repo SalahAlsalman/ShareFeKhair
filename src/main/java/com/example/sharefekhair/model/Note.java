@@ -20,7 +20,8 @@ public class Note {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String message;
+    private String title;
+    private String body;
     @Temporal(TemporalType.TIMESTAMP)
     private Date messageDate;
     @ManyToOne
@@ -40,21 +41,14 @@ public class Note {
 //    @OneToMany(mappedBy = "note",cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE })
     private List<Comment> comments;
 
-    public Note(Integer id, String message, Date messageDate, MyUser user, MySession mySession) {
+    public Note(Integer id,String title, String body, Date messageDate, MyUser user, MySession mySession) {
         this.id = id;
-        this.message = message;
+        this.title =title;
+        this.body = body;
         this.messageDate = new Date();
         this.user = user;
         this.mySession = mySession;
     }
 
-    @Override
-    public String toString() {
-        return "Note{" +
-                "id=" + id +
-                ", message='" + message + '\'' +
-                ", messageDate=" + messageDate +
-                ", user=" + user +
-                '}';
-    }
+
 }

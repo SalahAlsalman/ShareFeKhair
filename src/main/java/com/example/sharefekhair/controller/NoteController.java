@@ -22,6 +22,11 @@ public class NoteController {
         return ResponseEntity.status(200).body(new ResponseAPI<>(noteService.getNotes(), 200));
     }
 
+    @GetMapping("/{session_id}")
+    public ResponseEntity<ResponseAPI<?>> getNotesBySessionId(@PathVariable Integer session_id){
+        return ResponseEntity.status(200).body(new ResponseAPI<>(noteService.getNotesBySessionId(session_id), 200));
+    }
+
     @PostMapping
     public ResponseEntity<ResponseAPI<?>> addNote(@RequestBody @Valid NoteDTO noteDTO){
         noteService.addNote(noteDTO);

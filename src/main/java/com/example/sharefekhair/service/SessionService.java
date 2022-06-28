@@ -1,6 +1,7 @@
 package com.example.sharefekhair.service;
 
 import com.example.sharefekhair.DTO.MySessionDTO;
+import com.example.sharefekhair.exceptions.ClassIdIsNotFoundException;
 import com.example.sharefekhair.exceptions.MyClassNotFoundException;
 import com.example.sharefekhair.exceptions.NoRightsException;
 import com.example.sharefekhair.exceptions.SessionIdNotFoundException;
@@ -30,6 +31,14 @@ public class SessionService {
 
     public List<MySession> getSessions() {
         return sessionRepository.findAll();
+    }
+
+    public List<MySession> getSessionsByClass(Integer class_id) {
+        MyClass myClass = classRepository.findById(class_id).orElseThrow(()->{
+            throw new ClassIdIsNotFoundException("class_id is wrong");
+        });
+        List<MySession> sessions=sessionRepository.findMySessionsByMyClass_Id(myClass.getId()).get();
+        return sessions;
     }
 
     public void addSession(MySessionDTO mySessionDTO) {

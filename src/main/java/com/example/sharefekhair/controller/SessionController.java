@@ -22,6 +22,11 @@ public class SessionController {
         return ResponseEntity.status(200).body(new ResponseAPI<>(sessionService.getSessions(), 200));
     }
 
+    @GetMapping("/{class_id}")
+    public ResponseEntity<ResponseAPI<?>> getSessionsByClass(@PathVariable Integer class_id){
+        return ResponseEntity.status(200).body(new ResponseAPI<>(sessionService.getSessionsByClass(class_id), 200));
+    }
+
     @PostMapping
     public ResponseEntity<ResponseAPI<?>> addSession(@RequestBody @Valid MySessionDTO MySessionDTO){
         sessionService.addSession(MySessionDTO);

@@ -53,7 +53,8 @@ public class ClassService {
             return classRepository.findMyClassesByTeacher(teacher).get();
 
         }
-        return classRepository.findAll();
+        return new ArrayList<>();
+//        return classRepository.findAll();
     }
 
     public void addClass(MyClass myClass){

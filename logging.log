@@ -2519,3 +2519,300 @@ HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
 class_id is wrong
 2022-06-28 10:52:00.890  INFO 59897 --- [http-nio-8080-exec-6] c.e.s.advice.ControllerAdviceHandler     : MyClassNotFoundException => provoked!
 class_id is wrong
+2022-06-28 10:59:41.052 ERROR 59897 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 10:59:41 AST 2022}
+2022-06-28 10:59:41.711 ERROR 59897 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 10:59:41 AST 2022}
+2022-06-28 10:59:44.885 ERROR 59897 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 10:59:44 AST 2022}
+2022-06-28 10:59:44.900 ERROR 59897 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 10:59:44 AST 2022}
+2022-06-28 10:59:44.981 ERROR 59897 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 10:59:44 AST 2022}
+2022-06-28 10:59:44.981 ERROR 59897 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 10:59:44 AST 2022}
+2022-06-28 11:03:56.095 ERROR 59897 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 11:03:56 AST 2022}
+2022-06-28 11:03:56.134 ERROR 59897 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 11:03:56 AST 2022}
+2022-06-28 11:03:56.268 ERROR 59897 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 11:03:56 AST 2022}
+2022-06-28 11:03:56.270 ERROR 59897 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 11:03:56 AST 2022}
+2022-06-28 12:23:18.280 ERROR 59897 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:23:18 AST 2022}
+2022-06-28 12:23:18.359 ERROR 59897 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:23:18 AST 2022}
+2022-06-28 12:23:18.557 ERROR 59897 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:23:18 AST 2022}
+2022-06-28 12:23:18.569 ERROR 59897 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:23:18 AST 2022}
+2022-06-28 12:24:17.277  INFO 59897 --- [http-nio-8080-exec-6] c.e.s.advice.ControllerAdviceHandler     : NoteIdNotFoundException => provoked!
+note_id is wrong
+2022-06-28 12:30:34.220  INFO 63596 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 63596 (/Users/salahalsalman/Documents/GitHub/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/Documents/GitHub/ShareFeKhair)
+2022-06-28 12:30:34.223  INFO 63596 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 12:30:38.540  INFO 63596 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.729 seconds (JVM running for 5.528)
+2022-06-28 12:31:51.462 ERROR 63596 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:31:51 AST 2022}
+2022-06-28 12:31:55.942 ERROR 63596 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:31:55 AST 2022}
+2022-06-28 12:31:56.754 ERROR 63596 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:31:56 AST 2022}
+2022-06-28 12:32:02.300 ERROR 63596 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:32:02 AST 2022}
+2022-06-28 12:32:02.457 ERROR 63596 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:32:02 AST 2022}
+2022-06-28 12:32:02.458 ERROR 63596 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:32:02 AST 2022}
+2022-06-28 12:32:03.306 ERROR 63596 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:32:03 AST 2022}
+2022-06-28 12:32:03.681 ERROR 63596 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 12:32:03 AST 2022}
+2022-06-28 12:32:24.433 ERROR 63596 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : Exception => provoked!
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:253)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-06-28 13:09:04.793 ERROR 63596 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 13:09:04 AST 2022}
+2022-06-28 13:18:16.712 ERROR 63596 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 13:18:16 AST 2022}
+2022-06-28 13:26:41.426  INFO 67516 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 67516 (/Users/salahalsalman/Documents/GitHub/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/Documents/GitHub/ShareFeKhair)
+2022-06-28 13:26:41.430  INFO 67516 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 13:26:47.066  INFO 67516 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 6.159 seconds (JVM running for 7.274)
+2022-06-28 13:26:51.143 ERROR 67516 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 13:26:51 AST 2022}
+2022-06-28 13:26:51.143 ERROR 67516 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 13:26:51 AST 2022}
+2022-06-28 15:48:45.991 ERROR 67516 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 15:48:45 AST 2022}
+2022-06-28 15:48:45.991 ERROR 67516 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 15:48:45 AST 2022}
+2022-06-28 15:54:01.326 ERROR 67516 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 15:54:01 AST 2022}
+2022-06-28 15:54:04.340 ERROR 67516 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 15:54:04 AST 2022}
+2022-06-28 15:57:24.629 ERROR 67516 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 15:57:24 AST 2022}
+2022-06-28 15:58:03.500 ERROR 67516 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 15:58:03 AST 2022}
+2022-06-28 15:58:30.705 ERROR 67516 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 15:58:30 AST 2022}
+2022-06-28 15:59:25.066 ERROR 67516 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 15:59:25 AST 2022}
+2022-06-28 16:01:20.154 ERROR 67516 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:01:20 AST 2022}
+2022-06-28 16:01:27.126 ERROR 67516 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:01:27 AST 2022}
+2022-06-28 16:01:30.335 ERROR 67516 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:01:30 AST 2022}
+2022-06-28 16:01:57.956 ERROR 67516 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:01:57 AST 2022}
+2022-06-28 16:03:02.740 ERROR 67516 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:03:02 AST 2022}
+2022-06-28 16:04:03.561 ERROR 67516 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:04:03 AST 2022}
+2022-06-28 16:05:37.588 ERROR 67516 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:05:37 AST 2022}
+2022-06-28 16:05:40.116 ERROR 67516 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:05:40 AST 2022}
+2022-06-28 16:06:48.636 ERROR 67516 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:06:48 AST 2022}
+2022-06-28 16:08:25.262 ERROR 67516 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:08:25 AST 2022}
+2022-06-28 16:09:14.875 ERROR 67516 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:09:14 AST 2022}
+2022-06-28 16:09:18.526 ERROR 67516 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:09:18 AST 2022}
+2022-06-28 16:09:19.610 ERROR 67516 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:09:19 AST 2022}
+2022-06-28 16:09:39.741 ERROR 67516 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'salahDemo' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
+2022-06-28 16:09:40.106  WARN 67516 --- [http-nio-8080-exec-5] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'salahDemo' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
+2022-06-28 16:10:24.087 ERROR 67516 --- [http-nio-8080-exec-3] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:10:24 AST 2022}
+2022-06-28 16:11:23.120 ERROR 67516 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'salahDemo' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
+2022-06-28 16:11:23.142  WARN 67516 --- [http-nio-8080-exec-4] c.e.s.advice.ControllerAdviceHandler     : DataIntegrityViolationException => provoked!
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'salahDemo' for key 'user.UK_sb8bbouer5wak8vyiiy4pf2bx'
+2022-06-28 16:11:39.144 ERROR 67516 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:11:39 AST 2022}
+2022-06-28 16:11:39.144 ERROR 67516 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:11:39 AST 2022}
+2022-06-28 16:13:01.836 ERROR 67516 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:13:01 AST 2022}
+2022-06-28 16:14:33.538 ERROR 67516 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:14:33 AST 2022}
+2022-06-28 16:14:40.628 ERROR 67516 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:14:40 AST 2022}
+2022-06-28 16:16:42.250 ERROR 67516 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:16:42 AST 2022}
+2022-06-28 16:17:07.606 ERROR 67516 --- [http-nio-8080-exec-8] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:17:07 AST 2022}
+2022-06-28 16:17:07.606 ERROR 67516 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:17:07 AST 2022}
+2022-06-28 16:17:14.593 ERROR 67516 --- [http-nio-8080-exec-7] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:17:14 AST 2022}
+2022-06-28 16:17:19.739 ERROR 67516 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:17:19 AST 2022}
+2022-06-28 16:17:25.921 ERROR 67516 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:17:25 AST 2022}
+2022-06-28 16:19:36.905 ERROR 67516 --- [http-nio-8080-exec-10] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:19:36 AST 2022}
+2022-06-28 16:24:04.774  INFO 74093 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 74093 (/Users/salahalsalman/Documents/GitHub/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/Documents/GitHub/ShareFeKhair)
+2022-06-28 16:24:04.776  INFO 74093 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-28 16:24:08.966  INFO 74093 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.595 seconds (JVM running for 5.48)
+2022-06-28 16:25:58.538 ERROR 74093 --- [http-nio-8080-exec-4] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:25:58 AST 2022}
+2022-06-28 16:25:58.538 ERROR 74093 --- [http-nio-8080-exec-5] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:25:58 AST 2022}
+2022-06-28 16:25:58.610 ERROR 74093 --- [http-nio-8080-exec-6] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Tue Jun 28 16:25:58 AST 2022}

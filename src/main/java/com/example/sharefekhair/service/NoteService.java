@@ -29,6 +29,12 @@ public class NoteService {
         return noteRepository.findAll();
     }
 
+    public List<Note> getNotesBySessionId(Integer session_id) {
+        return noteRepository.findNotesByMySession_Id(session_id).orElseThrow(()->{
+            throw new SessionIdNotFoundException("session_id not found");
+        });
+    }
+
     public void addNote(NoteDTO noteDTO) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
@@ -48,7 +54,7 @@ public class NoteService {
             for (int i = 0; i < userClasses.size(); i++) {
                 MyClass myClass= userClasses.get(i);
                 if (myClass.getId().equals(classIdOfNote)){
-                    Note note = new Note(null,noteDTO.getMessage(),null,user,session);
+                    Note note = new Note(null,noteDTO.getTitle(),noteDTO.getBody(),null,user,session);
                     noteRepository.save(note);
                     user.getNotes().add(note);
                     session.getNotes().add(note);
@@ -66,7 +72,7 @@ public class NoteService {
             for (int i = 0; i < userClasses.size(); i++) {
                 MyClass myClass= userClasses.get(i);
                 if (myClass.getId().equals(classIdOfNote)){
-                    Note note = new Note(null,noteDTO.getMessage(),null,user,session);
+                    Note note = new Note(null,noteDTO.getTitle(),noteDTO.getBody(),null,user,session);
                     noteRepository.save(note);
                     user.getNotes().add(note);
                     session.getNotes().add(note);
@@ -110,7 +116,7 @@ public class NoteService {
         if (note.getUser().getId() != user.getId()){
             throw new YoureNotOwnerOfThisNoteException("you don't own this note");
         }
-        note.setMessage(noteDTO.getMessage());
+        note.setBody(noteDTO.getBody());
         noteRepository.save(note);
     }
 }

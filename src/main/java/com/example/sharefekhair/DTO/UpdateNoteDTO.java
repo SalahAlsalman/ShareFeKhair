@@ -9,6 +9,6 @@ import javax.validation.constraints.NotNull;
 
 @AllArgsConstructor @Data @NoArgsConstructor
 public class UpdateNoteDTO {
-    @NotEmpty(message = "message is required")
-    private String message;
+    @NotEmpty(message = "body is required")
+    private String body;
 }
