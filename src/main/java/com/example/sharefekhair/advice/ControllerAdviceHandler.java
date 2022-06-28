@@ -90,7 +90,14 @@ public class ControllerAdviceHandler {
     @ExceptionHandler(value = NoRightsException.class)
     public ResponseEntity<ResponseAPI<?>> NoRightsException(NoRightsException e) {
         logger.info("NoRightsException => provoked!\n"+e.getMessage());
-        return ResponseEntity.status(400).body(new ResponseAPI<>(e.getMessage(),400));
+        return ResponseEntity.status(401).body(new ResponseAPI<>(e.getMessage(),401));
+    }
+
+
+    @ExceptionHandler(value = ClassAlreadyRegisteredException.class)
+    public ResponseEntity<ResponseAPI<?>> ClassAlreadyRegisteredException(ClassAlreadyRegisteredException e) {
+        logger.info("ClassAlreadyRegisteredException => provoked!\n"+e.getMessage());
+        return ResponseEntity.status(403).body(new ResponseAPI<>(e.getMessage(),403));
     }
 
     @ExceptionHandler(value = YoureNotOwnerOfThisUserException.class)

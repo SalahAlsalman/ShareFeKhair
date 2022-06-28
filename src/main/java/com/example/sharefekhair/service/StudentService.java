@@ -1,5 +1,6 @@
 package com.example.sharefekhair.service;
 
+import com.example.sharefekhair.exceptions.ClassAlreadyRegisteredException;
 import com.example.sharefekhair.exceptions.MyClassNotFoundException;
 import com.example.sharefekhair.exceptions.StudentNotFoundException;
 import com.example.sharefekhair.model.MyClass;
@@ -45,10 +46,13 @@ public class StudentService {
         Student student = studentRepository.findStudentByUser(user).orElseThrow(()->{
             throw new UsernameNotFoundException("you're not student");
         });
-
         MyClass myClass= classRepository.findById(class_id).orElseThrow(()->{
             throw new MyClassNotFoundException("class_id is wrong");
         });
+
+        if (student.getClasses().contains(myClass)) {
+            throw new ClassAlreadyRegisteredException("Class is already registered");
+        }
 
         student.getClasses().add(myClass);
         myClass.getStudentSet().add(student);

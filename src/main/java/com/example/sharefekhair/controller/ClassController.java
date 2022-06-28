@@ -30,6 +30,11 @@ public class ClassController {
         classService.addClass(myClass);
         return ResponseEntity.status(201).body(new ResponseAPI<>("Class added",201));
     }
+    @PostMapping("/addUserToClass/{class_id}")
+    public ResponseEntity<ResponseAPI<?>> addUserToClass(@PathVariable Integer class_id) {
+        classService.addUserToClass(class_id);
+        return ResponseEntity.status(200).body(new ResponseAPI<>("Class added to user",200));
+    }
 
     @PutMapping
     public ResponseEntity<ResponseAPI<?>> updateClass(@RequestParam Integer class_id, @RequestParam String name) {

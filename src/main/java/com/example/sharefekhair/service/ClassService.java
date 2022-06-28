@@ -1,8 +1,6 @@
 package com.example.sharefekhair.service;
 
-import com.example.sharefekhair.exceptions.ClassIdIsNotFoundException;
-import com.example.sharefekhair.exceptions.StudentNotFoundException;
-import com.example.sharefekhair.exceptions.TeacherNotFoundException;
+import com.example.sharefekhair.exceptions.*;
 import com.example.sharefekhair.model.*;
 import com.example.sharefekhair.repository.*;
 import lombok.RequiredArgsConstructor;
@@ -59,6 +57,47 @@ public class ClassService {
 
     public void addClass(MyClass myClass){
         classRepository.save(myClass);
+    }
+
+    public void addUserToClass(Integer class_id) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
+            throw new UsernameNotFoundException("username is wrong");
+        });
+        if (user.getRole().equals("teacher")) {
+            Teacher teacher = teacherRepository.findTeacherByUser(user).orElseThrow(()->{
+                throw new TeacherNotFoundException("teacher_id is wrong!");
+            });
+            MyClass myClass= classRepository.findById(class_id).orElseThrow(()->{
+                throw new MyClassNotFoundException("class_id is wrong");
+            });
+
+            if (teacher.getClasses().contains(myClass)) {
+                throw new ClassAlreadyRegisteredException("Class is already registered");
+            }
+
+            teacher.getClasses().add(myClass);
+            myClass.setTeacher(teacher);
+            teacherRepository.save(teacher);
+            classRepository.save(myClass);
+        }
+        if (user.getRole().equals("student")) {
+            Student student = studentRepository.findStudentByUser(user).orElseThrow(()->{
+                throw new UsernameNotFoundException("you're not student");
+            });
+            MyClass myClass= classRepository.findById(class_id).orElseThrow(()->{
+                throw new MyClassNotFoundException("class_id is wrong");
+            });
+
+            if (student.getClasses().contains(myClass)) {
+                throw new ClassAlreadyRegisteredException("Class is already registered");
+            }
+
+            student.getClasses().add(myClass);
+            myClass.getStudentSet().add(student);
+            studentRepository.save(student);
+            classRepository.save(myClass);
+        }
     }
 
     public void deleteClass(Integer class_id) {
