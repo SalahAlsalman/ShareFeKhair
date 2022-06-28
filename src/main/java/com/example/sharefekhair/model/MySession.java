@@ -23,8 +23,8 @@ public class MySession {
     @ManyToOne
     @JoinTable(
             name = "class_sessions",
-            joinColumns = { @JoinColumn(name = "class_id") },
-            inverseJoinColumns = { @JoinColumn(name = "session_id"),}
+            joinColumns = { @JoinColumn(name = "session_id") },
+            inverseJoinColumns = { @JoinColumn(name = "class_id"),}
     )
     @NotNull(message = "class_id is required")
     private MyClass myClass;
@@ -32,8 +32,8 @@ public class MySession {
     @OneToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE }, orphanRemoval = true)
     @JoinTable(
             name = "notes_sessions",
-            joinColumns = { @JoinColumn(name = "note_id") },
-            inverseJoinColumns = { @JoinColumn(name = "session_id"),}
+            joinColumns = { @JoinColumn(name = "session_id") },
+            inverseJoinColumns = { @JoinColumn(name = "note_id"),}
     )
     private List<Note> notes;
 

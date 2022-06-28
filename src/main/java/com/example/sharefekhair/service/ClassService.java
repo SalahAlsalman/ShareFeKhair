@@ -11,6 +11,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
@@ -40,9 +41,8 @@ public class ClassService {
             Student student = studentRepository.findById(user.getId()).orElseThrow(() -> {
                 throw new StudentNotFoundException("user_id is wrong");
             });
-            return classRepository.findMyClassesByStudent(user.getId()).orElseThrow(()->{
-                throw new ClassIdIsNotFoundException("Something is wrong");
-            });
+            return classRepository.findByStudentSetIsContaining(student).get();
+
         }
 
         if (user.getRole().equals("teacher")) {

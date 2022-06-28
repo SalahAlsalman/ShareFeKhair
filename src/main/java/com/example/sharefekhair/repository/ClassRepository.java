@@ -11,11 +11,12 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @Repository
 public interface ClassRepository extends JpaRepository<MyClass, Integer> {
     Optional<List<MyClass>> findMyClassesByTeacher(Teacher teacher);
-    @Query(value = "SELECT * FROM student_class where student_id = :student_id", nativeQuery = true)
-    Optional<List<MyClass>> findMyClassesByStudent(@Param("student_id") Integer student_id);
+
+    Optional<List<MyClass>> findByStudentSetIsContaining(Student student);
 
 }

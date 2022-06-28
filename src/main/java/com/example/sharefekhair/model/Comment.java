@@ -29,8 +29,8 @@ public class Comment {
     @ManyToOne
     @JoinTable(
             name = "comments_note",
-            joinColumns = {@JoinColumn(name = "note_id")},
-            inverseJoinColumns = {@JoinColumn(name = "comment_id"),}
+            joinColumns = {@JoinColumn(name = "comment_id")},
+            inverseJoinColumns = {@JoinColumn(name = "note_id"),}
     )
     @JsonIgnore
     private Note note;

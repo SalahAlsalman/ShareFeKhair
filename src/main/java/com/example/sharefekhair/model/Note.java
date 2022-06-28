@@ -30,8 +30,8 @@ public class Note {
     @ManyToOne
     @JoinTable(
             name = "notes_sessions",
-            joinColumns = {@JoinColumn(name = "session_id")},
-            inverseJoinColumns = {@JoinColumn(name = "note_id"),}
+            joinColumns = {@JoinColumn(name = "note_id")},
+            inverseJoinColumns = {@JoinColumn(name = "session_id"),}
     )
     @JsonIgnore
     private MySession mySession;
