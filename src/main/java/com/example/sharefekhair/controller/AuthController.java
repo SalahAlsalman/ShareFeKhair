@@ -5,8 +5,11 @@ import com.example.sharefekhair.model.MyUser;
 import com.example.sharefekhair.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 @RestController
@@ -26,7 +29,9 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<ResponseAPI<?>> login(){
-        return ResponseEntity.status(200).body(new ResponseAPI<>("Logged",200));
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        return ResponseEntity.status(200).body(new ResponseAPI<>(authentication.getAuthorities(),200));
     }
 
 
