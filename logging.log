@@ -4595,3 +4595,24 @@ HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
 2022-06-29 20:20:59.639  INFO 36584 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 36584 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
 2022-06-29 20:20:59.640  INFO 36584 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
 2022-06-29 20:21:05.983  INFO 36584 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 6.533 seconds (JVM running for 6.896)
+2022-06-29 21:14:56.380  INFO 38092 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 38092 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
+2022-06-29 21:14:56.382  INFO 38092 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-29 21:14:56.944 ERROR 38092 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.port' to java.lang.Integer:
+
+    Property: server.port
+    Value: $PORT
+    Origin: class path resource [application.properties] - 18:15
+    Reason: failed to convert java.lang.String to java.lang.Integer (caused by java.lang.NumberFormatException: For input string: "$PORT")
+
+Action:
+
+Update your application's configuration
+
