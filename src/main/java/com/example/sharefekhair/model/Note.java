@@ -21,6 +21,7 @@ public class Note {
     private Integer id;
 
     private String title;
+    @Column(columnDefinition = "TEXT")
     private String body;
     @Temporal(TemporalType.TIMESTAMP)
     private Date messageDate;

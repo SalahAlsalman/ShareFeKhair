@@ -18,7 +18,7 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
+    @Column(columnDefinition = "TEXT")
     private String message;
     @Temporal(TemporalType.TIMESTAMP)
     private Date messageDate;

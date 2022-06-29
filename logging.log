@@ -4561,3 +4561,15 @@ HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
 2022-06-29 11:20:22.306 ERROR 81596 --- [http-nio-8080-exec-9] c.e.s.advice.MyAuthenticationEntryPoint  : 
 HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
  {exception=Full authentication is required to access this resource, timestamp=Wed Jun 29 11:20:22 AST 2022}
+2022-06-29 11:58:34.133  INFO 85636 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on Salahs-MacBook-Air.local with PID 85636 (/Users/salahalsalman/Documents/GitHub/ShareFeKhair/target/classes started by salahalsalman in /Users/salahalsalman/Documents/GitHub/ShareFeKhair)
+2022-06-29 11:58:34.135  INFO 85636 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-06-29 11:58:38.198  INFO 85636 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 4.426 seconds (JVM running for 5.465)
+2022-06-29 12:05:05.137 ERROR 85636 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Wed Jun 29 12:05:04 AST 2022}
+2022-06-29 12:05:05.137 ERROR 85636 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Wed Jun 29 12:05:04 AST 2022}
+2022-06-29 12:19:20.291 ERROR 85636 --- [http-nio-8080-exec-1] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Wed Jun 29 12:19:20 AST 2022}
