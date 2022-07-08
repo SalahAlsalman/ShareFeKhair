@@ -644,3 +644,13 @@ HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
 2022-07-09 01:28:35.852  INFO 30972 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 30972 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
 2022-07-09 01:28:35.853  INFO 30972 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
 2022-07-09 01:28:43.769  INFO 30972 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 8.158 seconds (JVM running for 8.613)
+2022-07-09 02:09:04.093  INFO 41940 --- [main] c.e.s.ShareFeKhairApplication            : Starting ShareFeKhairApplication using Java 18.0.1.1 on ABO_F with PID 41940 (C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair\target\classes started by ABO_F in C:\Users\ABO_F\WebstormProjects\Front-end Project\backend-end\ShareFeKhair)
+2022-07-09 02:09:04.096  INFO 41940 --- [main] c.e.s.ShareFeKhairApplication            : No active profile set, falling back to 1 default profile: "default"
+2022-07-09 02:09:07.165  INFO 41940 --- [main] c.e.s.ShareFeKhairApplication            : Started ShareFeKhairApplication in 3.375 seconds (JVM running for 3.828)
+2022-07-09 02:09:13.348 ERROR 41940 --- [http-nio-8080-exec-2] c.e.s.advice.MyAuthenticationEntryPoint  : 
+HttpServletResponse.SC_UNAUTHORIZED, Authentication Failed
+ {exception=Full authentication is required to access this resource, timestamp=Sat Jul 09 02:09:13 AST 2022}
+2022-07-09 02:10:41.315  INFO 41940 --- [http-nio-8080-exec-9] c.e.s.advice.ControllerAdviceHandler     : ClassAlreadyRegisteredException => provoked!
+Class is already registered
+2022-07-09 02:12:28.390  INFO 41940 --- [http-nio-8080-exec-2] c.e.s.advice.ControllerAdviceHandler     : MyClassNotFoundException => provoked!
+class_id is wrong

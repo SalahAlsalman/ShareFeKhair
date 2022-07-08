@@ -32,6 +32,7 @@ public class ClassController {
         return ResponseEntity.status(201).body(new ResponseAPI<>("Class added",201));
     }
     @PostMapping("/addUserToClass/{class_id}")
+    @CrossOrigin(origins = "*")
     public ResponseEntity<ResponseAPI<?>> addUserToClass(@PathVariable UUID class_id) {
         classService.addUserToClass(class_id);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Class added to user",200));
