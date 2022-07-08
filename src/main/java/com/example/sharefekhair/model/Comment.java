@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.UUID;
 
 @NoArgsConstructor
 @Getter
@@ -16,8 +17,7 @@ import java.util.Date;
 public class Comment {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private String id= UUID.randomUUID().toString().toUpperCase();
     @Column(columnDefinition = "TEXT")
     private String message;
     @Temporal(TemporalType.TIMESTAMP)
