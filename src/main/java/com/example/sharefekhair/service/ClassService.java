@@ -83,8 +83,8 @@ public class ClassService {
             classRepository.save(myClass);
         }
         if (user.getRole().equals("student")) {
-            Student student = studentRepository.findStudentByUser(user).orElseThrow(()->{
-                throw new UsernameNotFoundException("you're not student");
+            Student student = studentRepository.findById(user.getId()).orElseThrow(()->{
+                throw new StudentNotFoundException("you're not student");
             });
             MyClass myClass= classRepository.findById(class_id).orElseThrow(()->{
                 throw new MyClassNotFoundException("class_id is wrong");
