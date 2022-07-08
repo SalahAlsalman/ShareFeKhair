@@ -9,9 +9,10 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.util.UUID;
 
 @AllArgsConstructor @Data @NoArgsConstructor
 public class MySessionDTO {
 @NotNull(message = "class_id is required")
-    private Integer class_id;
+    private UUID class_id;
 }

@@ -4,11 +4,14 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 @NoArgsConstructor
 @Getter
@@ -17,8 +20,9 @@ import java.util.Set;
 public class Note {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @GeneratedValue
+    @Type(type="org.hibernate.type.UUIDCharType")
+    private UUID id;
 
     private String title;
     @Column(columnDefinition = "TEXT")
@@ -42,7 +46,7 @@ public class Note {
 //    @OneToMany(mappedBy = "note",cascade = { CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE })
     private List<Comment> comments;
 
-    public Note(Integer id,String title, String body, Date messageDate, MyUser user, MySession mySession) {
+    public Note(UUID id,String title, String body, Date messageDate, MyUser user, MySession mySession) {
         this.id = id;
         this.title =title;
         this.body = body;

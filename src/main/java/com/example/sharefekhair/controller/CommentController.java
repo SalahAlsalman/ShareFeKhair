@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("api/v1/comment")
@@ -31,13 +32,13 @@ public class CommentController {
     }
 
     @PutMapping("/{comment_id}")
-    public ResponseEntity<ResponseAPI<?>> updateComment(@PathVariable Integer comment_id,@RequestBody @Valid UpdateCommentDTO commentDTO){
+    public ResponseEntity<ResponseAPI<?>> updateComment(@PathVariable UUID comment_id, @RequestBody @Valid UpdateCommentDTO commentDTO){
         commentService.updateComment(comment_id, commentDTO);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Comment updated", 200));
     }
 
     @DeleteMapping("/{comment_id}")
-    public ResponseEntity<ResponseAPI<?>> deleteComment(@PathVariable Integer comment_id) {
+    public ResponseEntity<ResponseAPI<?>> deleteComment(@PathVariable UUID comment_id) {
         commentService.deleteComment(comment_id);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Comment Deleted!",200));
     }

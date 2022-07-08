@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping("api/v1/student")
 @RequiredArgsConstructor
@@ -18,7 +20,7 @@ public class StudentController {
     }
 
     @PostMapping
-    public ResponseEntity<ResponseAPI<?>> addStudentToClass(@RequestParam Integer class_id){
+    public ResponseEntity<ResponseAPI<?>> addStudentToClass(@RequestParam UUID class_id){
         studentService.addStudentToClass(class_id);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Class Added", 200));
     }

@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("api/v1/note")
@@ -23,7 +24,7 @@ public class NoteController {
     }
 
     @GetMapping("/{session_id}")
-    public ResponseEntity<ResponseAPI<?>> getNotesBySessionId(@PathVariable Integer session_id){
+    public ResponseEntity<ResponseAPI<?>> getNotesBySessionId(@PathVariable UUID session_id){
         return ResponseEntity.status(200).body(new ResponseAPI<>(noteService.getNotesBySessionId(session_id), 200));
     }
 
@@ -34,13 +35,13 @@ public class NoteController {
     }
 
     @PutMapping("/{note_id}")
-    public ResponseEntity<ResponseAPI<?>> updateNote(@PathVariable Integer note_id, @RequestBody @Valid UpdateNoteDTO noteDTO){
+    public ResponseEntity<ResponseAPI<?>> updateNote(@PathVariable UUID note_id, @RequestBody @Valid UpdateNoteDTO noteDTO){
         noteService.updateNote(note_id, noteDTO);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Note updated", 200));
     }
 
     @DeleteMapping("/{note_id}")
-    public ResponseEntity<ResponseAPI<?>> deleteNote(@PathVariable Integer note_id) {
+    public ResponseEntity<ResponseAPI<?>> deleteNote(@PathVariable UUID note_id) {
         noteService.deleteNote(note_id);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Note Deleted!",200));
     }

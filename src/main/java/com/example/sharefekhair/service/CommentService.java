@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -39,7 +40,7 @@ public class CommentService {
             throw new NoteIdNotFoundException("note_id is wrong");
         });
         if (user.getRole().equals("student")) {
-            Integer classIdOfNote = note.getMySession().getMyClass().getId();
+            UUID classIdOfNote = note.getMySession().getMyClass().getId();
             Student student = studentRepository.findById(user.getId()).orElseThrow(() -> {
                 throw new StudentNotFoundException("student_id is wrong!");
             });
@@ -56,7 +57,7 @@ public class CommentService {
             throw new UserIdDoesntHaveThisClassException("this user is not in this class");
         }
         if (user.getRole().equals("teacher")) {
-            Integer classIdOfNote = note.getMySession().getMyClass().getId();
+            UUID classIdOfNote = note.getMySession().getMyClass().getId();
             Teacher teacher = teacherRepository.findById(user.getId()).orElseThrow(() -> {
                 throw new StudentNotFoundException("teacher_id is wrong!");
             });
@@ -76,7 +77,7 @@ public class CommentService {
 
     }
 
-    public void deleteComment(Integer comment_id) {
+    public void deleteComment(UUID comment_id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(() -> {
             throw new UsernameNotFoundException("username is wrong");
@@ -96,7 +97,7 @@ public class CommentService {
         commentRepository.delete(comment);
     }
 
-    public void updateComment(Integer comment_id, UpdateCommentDTO commentDTO) {
+    public void updateComment(UUID comment_id, UpdateCommentDTO commentDTO) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(() -> {
             throw new UsernameNotFoundException("username is wrong");

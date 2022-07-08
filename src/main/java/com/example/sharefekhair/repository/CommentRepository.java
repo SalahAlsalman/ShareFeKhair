@@ -8,9 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Repository
-public interface CommentRepository extends JpaRepository<Comment, Integer> {
-    Optional<List<Comment>> findCommentsByNote_Id(Integer note_id);
+public interface CommentRepository extends JpaRepository<Comment, UUID> {
+    Optional<List<Comment>> findCommentsByNote_Id(UUID note_id);
     Optional<List<Comment>> findCommentsByUser(MyUser user);
 }

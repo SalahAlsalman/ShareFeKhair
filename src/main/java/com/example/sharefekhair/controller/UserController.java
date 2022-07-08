@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("api/v1/user")
@@ -24,14 +25,14 @@ public class UserController {
     //Post is register in auth controller
 
     @PutMapping("/{user_id}")
-    public ResponseEntity<ResponseAPI<?>> updateUser(@PathVariable Integer user_id,@RequestBody UpdateUserDTO user) {
+    public ResponseEntity<ResponseAPI<?>> updateUser(@PathVariable UUID user_id, @RequestBody UpdateUserDTO user) {
         userService.updateUser(user_id,user);
         return ResponseEntity.status(200).body(new ResponseAPI<>("user updated",200));
     }
 
 
     @DeleteMapping("/{user_id}")
-    public ResponseEntity<ResponseAPI<?>> deleteUser(@PathVariable Integer user_id){
+    public ResponseEntity<ResponseAPI<?>> deleteUser(@PathVariable UUID user_id){
         userService.deleteUser(user_id);
         return ResponseEntity.status(200).body(new ResponseAPI<>("user deleted", 200));
     }

@@ -6,6 +6,7 @@ import lombok.Data;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.sql.Date;
+import java.util.UUID;
 
 @AllArgsConstructor @Data
 public class NoteDTO {
@@ -14,5 +15,5 @@ public class NoteDTO {
     @NotEmpty(message = "body is required")
     private String body;
     @NotNull(message = "session_id is required")
-    private Integer session_id;
+    private UUID session_id;
 }

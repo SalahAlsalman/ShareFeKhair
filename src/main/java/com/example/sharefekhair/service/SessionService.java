@@ -13,10 +13,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -33,7 +30,7 @@ public class SessionService {
         return sessionRepository.findAll();
     }
 
-    public List<MySession> getSessionsByClass(Integer class_id) {
+    public List<MySession> getSessionsByClass(UUID class_id) {
         MyClass myClass = classRepository.findById(class_id).orElseThrow(()->{
             throw new ClassIdIsNotFoundException("class_id is wrong");
         });
@@ -57,7 +54,7 @@ public class SessionService {
         throw new NoRightsException("You dont have authority to make session");
     }
 
-    public void deleteSession(Integer session_id) {
+    public void deleteSession(UUID session_id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
             throw new UsernameNotFoundException("username is wrong");

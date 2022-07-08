@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -59,7 +60,7 @@ public class ClassService {
         classRepository.save(myClass);
     }
 
-    public void addUserToClass(Integer class_id) {
+    public void addUserToClass(UUID class_id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
             throw new UsernameNotFoundException("username is wrong");
@@ -100,7 +101,7 @@ public class ClassService {
         }
     }
 
-    public void deleteClass(Integer class_id) {
+    public void deleteClass(UUID class_id) {
 
         MyClass myClass = classRepository.findById(class_id).orElseThrow(()->{
             throw new ClassIdIsNotFoundException("class_id is wrong");
@@ -124,7 +125,7 @@ public class ClassService {
         classRepository.delete(myClass);
     }
 
-    public void updateClass(Integer class_id, String name) {
+    public void updateClass(UUID class_id, String name) {
         MyClass myClass = classRepository.findById(class_id).orElseThrow(()->{
             throw new ClassIdIsNotFoundException("class_id is wrong");
         });

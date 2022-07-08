@@ -12,9 +12,10 @@ import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.UUID;
 
 @Repository
-public interface ClassRepository extends JpaRepository<MyClass, Integer> {
+public interface ClassRepository extends JpaRepository<MyClass, UUID> {
     Optional<List<MyClass>> findMyClassesByTeacher(Teacher teacher);
 
     Optional<List<MyClass>> findByStudentSetIsContaining(Student student);

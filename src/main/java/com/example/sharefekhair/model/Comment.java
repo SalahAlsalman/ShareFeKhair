@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -17,7 +19,9 @@ import java.util.UUID;
 public class Comment {
 
     @Id
-    private String id= UUID.randomUUID().toString().toUpperCase();
+    @GeneratedValue
+    @Type(type="org.hibernate.type.UUIDCharType")
+    private UUID id;
     @Column(columnDefinition = "TEXT")
     private String message;
     @Temporal(TemporalType.TIMESTAMP)
@@ -35,7 +39,7 @@ public class Comment {
     @JsonIgnore
     private Note note;
 
-    public Comment(Integer id, String message, Date messageDate, MyUser user, Note note) {
+    public Comment(UUID id, String message, Date messageDate, MyUser user, Note note) {
         this.id = id;
         this.message = message;
         this.messageDate = new Date();

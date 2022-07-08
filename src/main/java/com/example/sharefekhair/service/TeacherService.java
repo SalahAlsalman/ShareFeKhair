@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -33,12 +34,12 @@ public class TeacherService {
         teacherRepository.save(teacher);
     }
 
-    public void addTeacherToClass(Integer class_id) {
+    public void addTeacherToClass(UUID class_id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
             throw new UsernameNotFoundException("username is wrong");
         });
-        Teacher teacher = teacherRepository.findTeacherByUser(user).orElseThrow(()->{
+        Teacher teacher = teacherRepository.findById(user.getId()).orElseThrow(()->{
             throw new TeacherNotFoundException("teacher_id is wrong!");
         });
         MyClass myClass= classRepository.findById(class_id).orElseThrow(()->{

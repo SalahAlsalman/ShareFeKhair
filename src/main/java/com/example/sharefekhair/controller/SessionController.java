@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("api/v1/session")
@@ -23,7 +24,7 @@ public class SessionController {
     }
 
     @GetMapping("/{class_id}")
-    public ResponseEntity<ResponseAPI<?>> getSessionsByClass(@PathVariable Integer class_id){
+    public ResponseEntity<ResponseAPI<?>> getSessionsByClass(@PathVariable UUID class_id){
         return ResponseEntity.status(200).body(new ResponseAPI<>(sessionService.getSessionsByClass(class_id), 200));
     }
 
@@ -34,7 +35,7 @@ public class SessionController {
     }
 
     @DeleteMapping("/{session_id}")
-    public ResponseEntity<ResponseAPI<?>> deleteSession(@PathVariable Integer session_id){
+    public ResponseEntity<ResponseAPI<?>> deleteSession(@PathVariable UUID session_id){
         sessionService.deleteSession(session_id);
         return ResponseEntity.status(200).body(new ResponseAPI<>("Session Deleted",200));
     }

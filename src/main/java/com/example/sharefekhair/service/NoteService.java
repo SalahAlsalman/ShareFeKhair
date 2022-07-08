@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -29,7 +30,7 @@ public class NoteService {
         return noteRepository.findAll();
     }
 
-    public List<Note> getNotesBySessionId(Integer session_id) {
+    public List<Note> getNotesBySessionId(UUID session_id) {
         return noteRepository.findNotesByMySession_Id(session_id).orElseThrow(()->{
             throw new SessionIdNotFoundException("session_id not found");
         });
@@ -46,7 +47,7 @@ public class NoteService {
         });
 
         if (user.getRole().equals("student")){
-            Integer classIdOfNote = session.getMyClass().getId();
+            UUID classIdOfNote = session.getMyClass().getId();
             Student student= studentRepository.findById(user.getId()).orElseThrow(()->{
                 throw new StudentNotFoundException("student_id is wrong!");
             });
@@ -64,7 +65,7 @@ public class NoteService {
             throw new UserIdDoesntHaveThisClassException("this user is not in this class");
         }
         if (user.getRole().equals("teacher")){
-            Integer classIdOfNote = session.getMyClass().getId();
+            UUID classIdOfNote = session.getMyClass().getId();
             Teacher teacher= teacherRepository.findById(user.getId()).orElseThrow(()->{
                 throw new TeacherNotFoundException("teacher_id is wrong!");
             });
@@ -83,7 +84,7 @@ public class NoteService {
         }
     }
 
-    public void deleteNote(Integer note_id) {
+    public void deleteNote(UUID note_id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
             throw new UsernameNotFoundException("username is wrong");
@@ -105,7 +106,7 @@ public class NoteService {
         session.getNotes().remove(note);
     }
 
-    public void updateNote(Integer note_id, UpdateNoteDTO noteDTO) {
+    public void updateNote(UUID note_id, UpdateNoteDTO noteDTO) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
             throw new UsernameNotFoundException("username is wrong");

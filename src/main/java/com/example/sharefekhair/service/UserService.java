@@ -11,10 +11,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -23,9 +20,6 @@ public class UserService {
     private final TeacherRepository teacherRepository;
     private final StudentRepository studentRepository;
     private final ClassRepository classRepository;
-    private final SessionRepository sessionRepository;
-    private final NoteRepository noteRepository;
-    private final CommentRepository commentRepository;
     private final StudentService studentService;
     private final TeacherService teacherService;
 
@@ -44,7 +38,7 @@ public class UserService {
             teacherService.addTeacher(new Teacher(null, user, new ArrayList<>()));
     }
 
-    public void updateUser(Integer user_id,UpdateUserDTO newUser) {
+    public void updateUser(UUID user_id, UpdateUserDTO newUser) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(() -> {
             throw new UsernameNotFoundException("username is wrong");
@@ -62,7 +56,7 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public void deleteUser(Integer user_id) {
+    public void deleteUser(UUID user_id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(() -> {
             throw new UsernameNotFoundException("username is wrong");

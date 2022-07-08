@@ -5,11 +5,12 @@ import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.util.UUID;
 
 @AllArgsConstructor @Data
 public class CommentDTO {
     @NotEmpty(message = "message is required")
     private String message;
     @NotNull(message = "note_id is required")
-    private Integer note_id;
+    private UUID note_id;
 }

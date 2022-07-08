@@ -17,10 +17,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -38,13 +35,13 @@ public class StudentService {
         studentRepository.save(student);
     }
 
-    public void addStudentToClass(Integer class_id) {
+    public void addStudentToClass(UUID class_id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         MyUser user = userRepository.findMyUserByUsername(authentication.getName()).orElseThrow(()->{
             throw new UsernameNotFoundException("username is wrong");
         });
-        Student student = studentRepository.findStudentByUser(user).orElseThrow(()->{
-            throw new UsernameNotFoundException("you're not student");
+        Student student = studentRepository.findById(user.getId()).orElseThrow(()->{
+            throw new StudentNotFoundException("you're not student");
         });
         MyClass myClass= classRepository.findById(class_id).orElseThrow(()->{
             throw new MyClassNotFoundException("class_id is wrong");
